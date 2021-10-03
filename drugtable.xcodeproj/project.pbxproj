@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9806108EA05984A460DD46EF /* Pods_drugtable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8831A6412B4236AFF6BDC6C0 /* Pods_drugtable.framework */; };
+		EF015FC02709AE490040D8CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */; };
 		EFD585EF270902A700581BD7 /* drugtableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD585EE270902A700581BD7 /* drugtableApp.swift */; };
 		EFD585F1270902A700581BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD585F0270902A700581BD7 /* ContentView.swift */; };
 		EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD585F2270902A800581BD7 /* Assets.xcassets */; };
@@ -14,11 +16,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EFD585EB270902A700581BD7 /* drugtable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drugtable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69FE16990DCDADBC77BCAF0F /* Pods-drugtable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drugtable.release.xcconfig"; path = "Target Support Files/Pods-drugtable/Pods-drugtable.release.xcconfig"; sourceTree = "<group>"; };
+		8831A6412B4236AFF6BDC6C0 /* Pods_drugtable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_drugtable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EFD585EB270902A700581BD7 /* Drugtable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drugtable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD585EE270902A700581BD7 /* drugtableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drugtableApp.swift; sourceTree = "<group>"; };
 		EFD585F0270902A700581BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EFD585F2270902A800581BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFD585F5270902A800581BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F725E89E356DF7A2FBFB2AA4 /* Pods-drugtable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-drugtable.debug.xcconfig"; path = "Target Support Files/Pods-drugtable/Pods-drugtable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,24 +32,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9806108EA05984A460DD46EF /* Pods_drugtable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A7FAD8157CEB5DEBF9D32B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8831A6412B4236AFF6BDC6C0 /* Pods_drugtable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6397A10BC7CDC17E37378158 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F725E89E356DF7A2FBFB2AA4 /* Pods-drugtable.debug.xcconfig */,
+				69FE16990DCDADBC77BCAF0F /* Pods-drugtable.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EFD585E2270902A700581BD7 = {
 			isa = PBXGroup;
 			children = (
 				EFD585ED270902A700581BD7 /* drugtable */,
 				EFD585EC270902A700581BD7 /* Products */,
+				6397A10BC7CDC17E37378158 /* Pods */,
+				5A7FAD8157CEB5DEBF9D32B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		EFD585EC270902A700581BD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFD585EB270902A700581BD7 /* drugtable.app */,
+				EFD585EB270902A700581BD7 /* Drugtable.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +81,7 @@
 				EFD585EE270902A700581BD7 /* drugtableApp.swift */,
 				EFD585F0270902A700581BD7 /* ContentView.swift */,
 				EFD585F2270902A800581BD7 /* Assets.xcassets */,
+				EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */,
 				EFD585F4270902A800581BD7 /* Preview Content */,
 			);
 			path = drugtable;
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFD585F9270902A800581BD7 /* Build configuration list for PBXNativeTarget "drugtable" */;
 			buildPhases = (
+				0B40FAA8F979DFC57EE5B4D7 /* [CP] Check Pods Manifest.lock */,
 				EFD585E7270902A700581BD7 /* Sources */,
 				EFD585E8270902A700581BD7 /* Frameworks */,
 				EFD585E9270902A700581BD7 /* Resources */,
+				8EA754F6A28ABFC77BC49C17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +114,7 @@
 			);
 			name = drugtable;
 			productName = drugtable;
-			productReference = EFD585EB270902A700581BD7 /* drugtable.app */;
+			productReference = EFD585EB270902A700581BD7 /* Drugtable.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,10 +157,53 @@
 			files = (
 				EFD585F6270902A800581BD7 /* Preview Assets.xcassets in Resources */,
 				EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */,
+				EF015FC02709AE490040D8CA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B40FAA8F979DFC57EE5B4D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-drugtable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA754F6A28ABFC77BC49C17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-drugtable/Pods-drugtable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-drugtable/Pods-drugtable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-drugtable/Pods-drugtable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EFD585E7270902A700581BD7 /* Sources */ = {
@@ -263,6 +336,7 @@
 		};
 		EFD585FA270902A800581BD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F725E89E356DF7A2FBFB2AA4 /* Pods-drugtable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -284,7 +358,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.vasbaz.drugtable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Drugtable;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,6 +367,7 @@
 		};
 		EFD585FB270902A800581BD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69FE16990DCDADBC77BCAF0F /* Pods-drugtable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,7 +389,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.vasbaz.drugtable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Drugtable;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
