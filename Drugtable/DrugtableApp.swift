@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 
 @main
-struct drugtableApp: App {
+struct DrugtableApp: App {
     init() {
         FirebaseApp.configure()
     }
