@@ -10,4 +10,6 @@ import Foundation
 struct Drug: Hashable, Codable {
     let id: Int
     let name: String
+    
+    static let example = Drug(id: 1, name: "Example drug")
 }
