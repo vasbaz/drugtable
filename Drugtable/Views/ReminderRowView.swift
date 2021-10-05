@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct DrugRowView: View {
-    let drug: Drug
+struct ReminderRowView: View {
+    let reminder: Reminder
     
     var body: some View {
         HStack{
-            Text(drug.name)
+            Text(reminder.drug.name)
             Spacer()
-            Text(String(drug.id))
+            Text(String(reminder.takingTime.time))
         }.padding()
     }
 }
 
-struct DrugRowView_Previews: PreviewProvider {
+struct ReminderRowView_Previews: PreviewProvider {
     static var previews: some View {
-        DrugRowView(drug: Drug.example)
+        ReminderRowView(reminder: Reminder.example)
     }
 }
