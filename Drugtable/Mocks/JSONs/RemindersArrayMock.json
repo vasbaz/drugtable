@@ -1,0 +1,38 @@
+[
+    {
+        "drug": {
+            "id": 1,
+            "name": "Galoperidol"
+        },
+        "dosage": {
+            "amount": "3 pills"
+        },
+        "takingTime": {
+            "time": "After dinner"
+        }
+    },
+    {
+        "drug": {
+            "id": 2,
+            "name": "Nurofen"
+        },
+        "dosage": {
+            "amount": "2 pills"
+        },
+        "takingTime": {
+            "time": "After dinner"
+        }
+    },
+    {
+        "drug": {
+            "id": 3,
+            "name": "Tizin"
+        },
+        "dosage": {
+            "amount": "1 injection"
+        },
+        "takingTime": {
+            "time": "Morning"
+        }
+    }
+]

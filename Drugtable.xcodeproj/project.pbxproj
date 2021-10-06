@@ -13,12 +13,14 @@
 		EF501DAA270CE46B0083FDF9 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DA9270CE46B0083FDF9 /* Reminder.swift */; };
 		EF501DAC270CE5620083FDF9 /* DrugTakingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DAB270CE5620083FDF9 /* DrugTakingTime.swift */; };
 		EF501DAE270CE65C0083FDF9 /* Dosage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DAD270CE65C0083FDF9 /* Dosage.swift */; };
-		EF501DB1270CE8440083FDF9 /* Exampled.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DB0270CE8440083FDF9 /* Exampled.swift */; };
-		EF631D84270B75CE00CEED62 /* DrugsExampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = EF631D83270B75CE00CEED62 /* DrugsExampleData.json */; };
+		EF501DB3270E04B30083FDF9 /* RemindersGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DB2270E04B30083FDF9 /* RemindersGroupView.swift */; };
+		EF501DB6270E0A060083FDF9 /* MockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DB5270E0A060083FDF9 /* MockProvider.swift */; };
+		EF501DBA270E15260083FDF9 /* ReminderMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DB9270E15260083FDF9 /* ReminderMockProvider.swift */; };
+		EF501DBC270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DBB270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift */; };
+		EF631D84270B75CE00CEED62 /* RemindersArrayMock.json in Resources */ = {isa = PBXBuildFile; fileRef = EF631D83270B75CE00CEED62 /* RemindersArrayMock.json */; };
 		EF631D86270B766C00CEED62 /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF631D85270B766C00CEED62 /* Drug.swift */; };
-		EF631D8A270B7C3B00CEED62 /* DrugsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF631D89270B7C3B00CEED62 /* DrugsRepository.swift */; };
+		EF631D8A270B7C3B00CEED62 /* RemindersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF631D89270B7C3B00CEED62 /* RemindersRepository.swift */; };
 		EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD585EE270902A700581BD7 /* DrugtableApp.swift */; };
-		EFD585F1270902A700581BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD585F0270902A700581BD7 /* ContentView.swift */; };
 		EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD585F2270902A800581BD7 /* Assets.xcassets */; };
 		EFD585F6270902A800581BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD585F5270902A800581BD7 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -31,13 +33,15 @@
 		EF501DA9270CE46B0083FDF9 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		EF501DAB270CE5620083FDF9 /* DrugTakingTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugTakingTime.swift; sourceTree = "<group>"; };
 		EF501DAD270CE65C0083FDF9 /* Dosage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dosage.swift; sourceTree = "<group>"; };
-		EF501DB0270CE8440083FDF9 /* Exampled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exampled.swift; sourceTree = "<group>"; };
-		EF631D83270B75CE00CEED62 /* DrugsExampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DrugsExampleData.json; sourceTree = "<group>"; };
+		EF501DB2270E04B30083FDF9 /* RemindersGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersGroupView.swift; sourceTree = "<group>"; };
+		EF501DB5270E0A060083FDF9 /* MockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProvider.swift; sourceTree = "<group>"; };
+		EF501DB9270E15260083FDF9 /* ReminderMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderMockProvider.swift; sourceTree = "<group>"; };
+		EF501DBB270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersArrayMockProvider.swift; sourceTree = "<group>"; };
+		EF631D83270B75CE00CEED62 /* RemindersArrayMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RemindersArrayMock.json; sourceTree = "<group>"; };
 		EF631D85270B766C00CEED62 /* Drug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; };
-		EF631D89270B7C3B00CEED62 /* DrugsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugsRepository.swift; sourceTree = "<group>"; };
+		EF631D89270B7C3B00CEED62 /* RemindersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersRepository.swift; sourceTree = "<group>"; };
 		EFD585EB270902A700581BD7 /* Drugtable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drugtable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD585EE270902A700581BD7 /* DrugtableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugtableApp.swift; sourceTree = "<group>"; };
-		EFD585F0270902A700581BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EFD585F2270902A800581BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFD585F5270902A800581BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F915EB7C850C3555388165FE /* Pods_Drugtable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drugtable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,8 +79,8 @@
 		EF501DA0270CD4940083FDF9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EFD585F0270902A700581BD7 /* ContentView.swift */,
 				EF501DA4270CD5830083FDF9 /* ReminderRowView.swift */,
+				EF501DB2270E04B30083FDF9 /* RemindersGroupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,12 +92,23 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		EF501DAF270CE8070083FDF9 /* Utilities */ = {
+		EF501DB4270E06F70083FDF9 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				EF501DB0270CE8440083FDF9 /* Exampled.swift */,
+				EF501DB8270E14960083FDF9 /* JSONs */,
+				EF501DB5270E0A060083FDF9 /* MockProvider.swift */,
+				EF501DB9270E15260083FDF9 /* ReminderMockProvider.swift */,
+				EF501DBB270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift */,
 			);
-			path = Utilities;
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EF501DB8270E14960083FDF9 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				EF631D83270B75CE00CEED62 /* RemindersArrayMock.json */,
+			);
+			path = JSONs;
 			sourceTree = "<group>";
 		};
 		EF631D87270B794400CEED62 /* Models */ = {
@@ -110,8 +125,7 @@
 		EF631D88270B7C0F00CEED62 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				EF631D89270B7C3B00CEED62 /* DrugsRepository.swift */,
-				EF631D83270B75CE00CEED62 /* DrugsExampleData.json */,
+				EF631D89270B7C3B00CEED62 /* RemindersRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -137,11 +151,11 @@
 		EFD585ED270902A700581BD7 /* Drugtable */ = {
 			isa = PBXGroup;
 			children = (
+				EF501DB4270E06F70083FDF9 /* Mocks */,
 				EF631D88270B7C0F00CEED62 /* Repositories */,
 				EF631D87270B794400CEED62 /* Models */,
 				EF501DA6270CE2A60083FDF9 /* ViewModels */,
 				EF501DA0270CD4940083FDF9 /* Views */,
-				EF501DAF270CE8070083FDF9 /* Utilities */,
 				EFD585EE270902A700581BD7 /* DrugtableApp.swift */,
 				EFD585F2270902A800581BD7 /* Assets.xcassets */,
 				EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */,
@@ -218,7 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF631D84270B75CE00CEED62 /* DrugsExampleData.json in Resources */,
+				EF631D84270B75CE00CEED62 /* RemindersArrayMock.json in Resources */,
 				EFD585F6270902A800581BD7 /* Preview Assets.xcassets in Resources */,
 				EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */,
 				EF015FC02709AE490040D8CA /* GoogleService-Info.plist in Resources */,
@@ -275,13 +289,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF501DAE270CE65C0083FDF9 /* Dosage.swift in Sources */,
-				EFD585F1270902A700581BD7 /* ContentView.swift in Sources */,
+				EF501DB3270E04B30083FDF9 /* RemindersGroupView.swift in Sources */,
 				EF501DA5270CD5830083FDF9 /* ReminderRowView.swift in Sources */,
+				EF501DBC270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift in Sources */,
 				EF501DAC270CE5620083FDF9 /* DrugTakingTime.swift in Sources */,
-				EF631D8A270B7C3B00CEED62 /* DrugsRepository.swift in Sources */,
+				EF631D8A270B7C3B00CEED62 /* RemindersRepository.swift in Sources */,
 				EF501DAA270CE46B0083FDF9 /* Reminder.swift in Sources */,
 				EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */,
-				EF501DB1270CE8440083FDF9 /* Exampled.swift in Sources */,
+				EF501DBA270E15260083FDF9 /* ReminderMockProvider.swift in Sources */,
+				EF501DB6270E0A060083FDF9 /* MockProvider.swift in Sources */,
 				EF631D86270B766C00CEED62 /* Drug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

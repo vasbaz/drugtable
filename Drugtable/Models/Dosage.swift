@@ -10,7 +10,3 @@ import Foundation
 struct Dosage: Hashable, Codable {
     let amount: String
 }
-
-extension Dosage: Exampled {
-    static let example = Dosage(amount: "2 pills")
-}

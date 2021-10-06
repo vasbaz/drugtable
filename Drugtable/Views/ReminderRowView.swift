@@ -1,5 +1,5 @@
 //
-//  DrugRowView.swift
+//  ReminderRowView.swift
 //  Drugtable
 //
 //  Created by Danila Vasilchenko-Bazarov on 05.10.2021.
@@ -14,13 +14,15 @@ struct ReminderRowView: View {
         HStack{
             Text(reminder.drug.name)
             Spacer()
-            Text(String(reminder.takingTime.time))
+            Text(String(reminder.dosage.amount))
         }.padding()
     }
 }
 
 struct ReminderRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ReminderRowView(reminder: Reminder.example)
+        let reminderMock = ReminderMockProvider().getMock()
+        
+        return ReminderRowView(reminder: reminderMock)
     }
 }

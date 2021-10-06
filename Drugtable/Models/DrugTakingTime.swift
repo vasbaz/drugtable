@@ -10,7 +10,3 @@ import Foundation
 struct DrugTakingTime: Hashable, Codable {
     let time: String
 }
-
-extension DrugTakingTime: Exampled {
-    static let example = DrugTakingTime(time: "After dinner")
-}

@@ -10,13 +10,16 @@ import Firebase
 
 @main
 struct DrugtableApp: App {
+    var reminders: [Reminder]
+    
     init() {
         FirebaseApp.configure()
+        reminders = RemindersArrayMockProvider().getMock()
     }
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RemindersGroupView(reminders: reminders)
         }
     }
 }

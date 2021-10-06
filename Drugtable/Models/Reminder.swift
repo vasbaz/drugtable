@@ -12,7 +12,3 @@ struct Reminder: Hashable, Codable {
     let dosage: Dosage
     let takingTime: DrugTakingTime
 }
-
-extension Reminder: Exampled {
-    static let example = Reminder(drug: Drug.example, dosage: Dosage.example, takingTime: DrugTakingTime.example)
-}
