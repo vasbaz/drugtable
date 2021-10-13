@@ -41,3 +41,17 @@
 
 Форма регистрации нового пользователя (электронная почта/номер телефона + пароль или альтернативные
 способы авторизации Firebase)
+
+## Backend
+
+Полностью Firebase, включая сервисы:
+* Authentication
+* Cloud Firestore
+* Storage
+* Crashlytics
+
+Возможно:
+* Test Lab
+* Remote Config
+* Functions (язык - Python)
+* 
