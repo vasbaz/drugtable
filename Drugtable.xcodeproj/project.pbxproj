@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B01EA6E0356EA400A8E982C2 /* Pods_Drugtable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F915EB7C850C3555388165FE /* Pods_Drugtable.framework */; };
+		CEE880C9FB52B008B78B4F07 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CEE8849570780CD10C021E99 /* README.md */; };
 		EF015FC02709AE490040D8CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */; };
 		EF501DA5270CD5830083FDF9 /* ReminderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DA4270CD5830083FDF9 /* ReminderRowView.swift */; };
 		EF501DAA270CE46B0083FDF9 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF501DA9270CE46B0083FDF9 /* Reminder.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		62F196F620E8312145B6A689 /* Pods-Drugtable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drugtable.release.xcconfig"; path = "Target Support Files/Pods-Drugtable/Pods-Drugtable.release.xcconfig"; sourceTree = "<group>"; };
 		744C0EAFC2836F96601CAA67 /* Pods-Drugtable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drugtable.debug.xcconfig"; path = "Target Support Files/Pods-Drugtable/Pods-Drugtable.debug.xcconfig"; sourceTree = "<group>"; };
+		CEE8849570780CD10C021E99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF501DA4270CD5830083FDF9 /* ReminderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRowView.swift; sourceTree = "<group>"; };
 		EF501DA9270CE46B0083FDF9 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				EFD585EC270902A700581BD7 /* Products */,
 				6397A10BC7CDC17E37378158 /* Pods */,
 				5A7FAD8157CEB5DEBF9D32B1 /* Frameworks */,
+				CEE8849570780CD10C021E99 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +302,7 @@
 				EF501DBA270E15260083FDF9 /* ReminderMockProvider.swift in Sources */,
 				EF501DB6270E0A060083FDF9 /* MockProvider.swift in Sources */,
 				EF631D86270B766C00CEED62 /* Drug.swift in Sources */,
+				CEE880C9FB52B008B78B4F07 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
