@@ -8,11 +8,11 @@
 import Foundation
 
 class ReminderMockProvider: MockProvider {
-    let drugMock = Drug(id: 1, name: "Galoperidol")
-    let dosageMock = Dosage(amount: "3 pills")
-    let drugTakingTimeMock = DrugTakingTime(time: "After dinner")
+    let drugMock = DrugMockProvider().getMock()
+    let dosageMock = DosageMockProvider().getMock()
+    let drugTakingTimeMock = IntervalMockProvider().getMock()
     
     func getMock() -> Reminder {
-        Reminder(drug: drugMock, dosage: dosageMock, takingTime: drugTakingTimeMock)
+        Reminder(drug: drugMock, dosage: dosageMock, interval: drugTakingTimeMock)
     }
 }

@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct DrugTakingTime: Hashable, Codable {
+struct Interval: Hashable, Codable {
     let time: String
 }

@@ -10,5 +10,5 @@ import Foundation
 struct Reminder: Hashable, Codable {
     let drug: Drug
     let dosage: Dosage
-    let takingTime: DrugTakingTime
+    let interval: Interval
 }

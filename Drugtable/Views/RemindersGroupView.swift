@@ -11,7 +11,11 @@ struct RemindersGroupView: View {
     let reminders: [Reminder]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GroupBox(label: Text("Morning")) {
+            List(reminders, id: \.self) {
+                reminder in ReminderRowView(reminder: reminder)
+            }
+        }
     }
 }
 

@@ -7,7 +7,7 @@
         "dosage": {
             "amount": "3 pills"
         },
-        "takingTime": {
+        "interval": {
             "time": "After dinner"
         }
     },
@@ -19,7 +19,7 @@
         "dosage": {
             "amount": "2 pills"
         },
-        "takingTime": {
+        "interval": {
             "time": "After dinner"
         }
     },
@@ -31,7 +31,7 @@
         "dosage": {
             "amount": "1 injection"
         },
-        "takingTime": {
+        "interval": {
             "time": "Morning"
         }
     }
