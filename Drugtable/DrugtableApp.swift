@@ -19,7 +19,7 @@ struct DrugtableApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RemindersGroupView(reminders: reminders)
+            RemindersPage(reminders: reminders)
         }
     }
 }
