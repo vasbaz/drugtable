@@ -11,4 +11,3 @@ struct RemindersGroupViewModel {
     let interval: Interval
     let reminders: [Reminder]
 }
-
