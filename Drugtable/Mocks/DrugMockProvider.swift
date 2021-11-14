@@ -9,6 +9,6 @@ import Foundation
 
 class DrugMockProvider: MockProvider {
     func getMock() -> Drug {
-        Drug(id: 1, name: "Galoperidol")
+        Drug(id: "1", name: "Galoperidol")
     }
 }

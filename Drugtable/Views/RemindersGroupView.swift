@@ -10,12 +10,22 @@ import SwiftUI
 struct RemindersGroupView: View {
     let reminders: [Reminder]
     
+    @ViewBuilder func resolveBackground(theme: IntervalTheme?) -> some View {
+        switch theme {
+        case .warmOrange:
+            LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange]), startPoint: .top, endPoint: .bottom)
+        default:
+            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.green]), startPoint: .top, endPoint: .bottom)
+        }
+    }
+    
     var body: some View {
-        GroupBox(label: Text("Morning")) {
-            List(reminders, id: \.self) {
+        VStack(alignment: .leading) {
+            Text("Morning").font(.title)
+            ForEach (reminders) {
                 reminder in ReminderRowView(reminder: reminder)
             }
-        }
+        }.padding(12.0).background(resolveBackground(theme: nil)).cornerRadius(12)
     }
 }
 

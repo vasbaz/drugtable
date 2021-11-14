@@ -9,4 +9,5 @@ import Foundation
 
 struct Interval: Hashable, Codable {
     let time: String
+    let theme: IntervalTheme
 }

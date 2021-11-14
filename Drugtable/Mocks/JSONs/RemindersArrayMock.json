@@ -1,38 +1,44 @@
 [
     {
+        "id": "1",
         "drug": {
-            "id": 1,
+            "id": "1",
             "name": "Galoperidol"
         },
         "dosage": {
             "amount": "3 pills"
         },
         "interval": {
-            "time": "After dinner"
+            "time": "After dinner",
+            "theme": "warmOrange"
         }
     },
     {
+        "id": "2",
         "drug": {
-            "id": 2,
+            "id": "2",
             "name": "Nurofen"
         },
         "dosage": {
             "amount": "2 pills"
         },
         "interval": {
-            "time": "After dinner"
+            "time": "After dinner",
+            "theme": "warmOrange"
         }
     },
     {
+        "id": "3",
         "drug": {
-            "id": 3,
+            "id": "3",
             "name": "Tizin"
         },
         "dosage": {
             "amount": "1 injection"
         },
         "interval": {
-            "time": "Morning"
+            "time": "Morning",
+            "theme": "warmOrange"
         }
     }
 ]

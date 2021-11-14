@@ -34,6 +34,7 @@
 		EF8ED7B52721F0020028FB1E /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8ED7B42721F0020028FB1E /* LoginFormView.swift */; };
 		EF8ED7B72723135A0028FB1E /* RegisterFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8ED7B6272313590028FB1E /* RegisterFormViewModel.swift */; };
 		EF8ED7B9272315020028FB1E /* RegisterFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8ED7B8272315020028FB1E /* RegisterFormView.swift */; };
+		EFAB1C2B2741584B00BF7897 /* IntervalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB1C2A2741584B00BF7897 /* IntervalTheme.swift */; };
 		EFCA0964274017400005DB6C /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA0963274017400005DB6C /* SettingsPage.swift */; };
 		EFCA096827401A6A0005DB6C /* SettingsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */; };
 		EFCA096A27401B1C0005DB6C /* SettingsOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */; };
@@ -73,6 +74,7 @@
 		EF8ED7B42721F0020028FB1E /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
 		EF8ED7B6272313590028FB1E /* RegisterFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormViewModel.swift; sourceTree = "<group>"; };
 		EF8ED7B8272315020028FB1E /* RegisterFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormView.swift; sourceTree = "<group>"; };
+		EFAB1C2A2741584B00BF7897 /* IntervalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTheme.swift; sourceTree = "<group>"; };
 		EFCA0963274017400005DB6C /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionView.swift; sourceTree = "<group>"; };
 		EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionViewModel.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				EF501DA9270CE46B0083FDF9 /* Reminder.swift */,
 				EF501DAB270CE5620083FDF9 /* Interval.swift */,
 				EF501DAD270CE65C0083FDF9 /* Dosage.swift */,
+				EFAB1C2A2741584B00BF7897 /* IntervalTheme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				EFF557212718AB1800ADBD5A /* DrugMockProvider.swift in Sources */,
 				EF8ED7B52721F0020028FB1E /* LoginFormView.swift in Sources */,
 				EF3C4D8327232E5100802F31 /* AuthRepository.swift in Sources */,
+				EFAB1C2B2741584B00BF7897 /* IntervalTheme.swift in Sources */,
 				EF501DB3270E04B30083FDF9 /* RemindersGroupView.swift in Sources */,
 				EF501DA5270CD5830083FDF9 /* ReminderRowView.swift in Sources */,
 				EFF5571F2718AAC900ADBD5A /* DosageMockProvider.swift in Sources */,
