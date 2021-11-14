@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegisterPage: View {
     var body: some View {
-        RegisterFormView()
+        RegisterFormView().navigationBarTitle("Register")
     }
 }
 

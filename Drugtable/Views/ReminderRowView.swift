@@ -20,9 +20,9 @@ struct ReminderRowView: View {
 }
 
 struct ReminderRowView_Previews: PreviewProvider {
+    static let reminderMock = ReminderMockProvider().getMock()
+
     static var previews: some View {
-        let reminderMock = ReminderMockProvider().getMock()
-        
         return ReminderRowView(reminder: reminderMock)
     }
 }

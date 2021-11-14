@@ -11,11 +11,12 @@ struct RemindersPage: View {
     let reminders: [Reminder]
     
     var body: some View {
-        NavigationView{
-            VStack {
-                RemindersGroupView(reminders: reminders)
-            }.navigationBarTitle("Reminders")
-        }
+        VStack {
+            RemindersGroupView(reminders: reminders)
+            NavigationLink(destination: SettingsPage(viewModel: SettingsPageViewModel())) {
+                Text("Settings")
+            }
+        }.navigationBarTitle("Reminders")
     }
 }
 

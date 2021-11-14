@@ -34,6 +34,12 @@
 		EF8ED7B52721F0020028FB1E /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8ED7B42721F0020028FB1E /* LoginFormView.swift */; };
 		EF8ED7B72723135A0028FB1E /* RegisterFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8ED7B6272313590028FB1E /* RegisterFormViewModel.swift */; };
 		EF8ED7B9272315020028FB1E /* RegisterFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8ED7B8272315020028FB1E /* RegisterFormView.swift */; };
+		EFCA0964274017400005DB6C /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA0963274017400005DB6C /* SettingsPage.swift */; };
+		EFCA096827401A6A0005DB6C /* SettingsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */; };
+		EFCA096A27401B1C0005DB6C /* SettingsOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */; };
+		EFCA096C27401E640005DB6C /* SettingsOptionsGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */; };
+		EFCA096E27401FA80005DB6C /* SettingsPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */; };
+		EFCA097027402F840005DB6C /* SettingsOptionMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */; };
 		EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD585EE270902A700581BD7 /* DrugtableApp.swift */; };
 		EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD585F2270902A800581BD7 /* Assets.xcassets */; };
 		EFD585F6270902A800581BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD585F5270902A800581BD7 /* Preview Assets.xcassets */; };
@@ -67,6 +73,12 @@
 		EF8ED7B42721F0020028FB1E /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
 		EF8ED7B6272313590028FB1E /* RegisterFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormViewModel.swift; sourceTree = "<group>"; };
 		EF8ED7B8272315020028FB1E /* RegisterFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormView.swift; sourceTree = "<group>"; };
+		EFCA0963274017400005DB6C /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionView.swift; sourceTree = "<group>"; };
+		EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionViewModel.swift; sourceTree = "<group>"; };
+		EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsGroupViewModel.swift; sourceTree = "<group>"; };
+		EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPageViewModel.swift; sourceTree = "<group>"; };
+		EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionMockProvider.swift; sourceTree = "<group>"; };
 		EFD585EE270902A700581BD7 /* DrugtableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugtableApp.swift; sourceTree = "<group>"; };
 		EFD585F2270902A800581BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFD585F5270902A800581BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -102,6 +114,7 @@
 				EF3C4D7F27231DC800802F31 /* LoginPage.swift */,
 				EF3C4D7D27231D8F00802F31 /* RegisterPage.swift */,
 				EFF557112718900E00ADBD5A /* RemindersPage.swift */,
+				EFCA0963274017400005DB6C /* SettingsPage.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -114,6 +127,7 @@
 				EF8ED7B8272315020028FB1E /* RegisterFormView.swift */,
 				EF501DA4270CD5830083FDF9 /* ReminderRowView.swift */,
 				EF501DB2270E04B30083FDF9 /* RemindersGroupView.swift */,
+				EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +138,9 @@
 				EF8ED7B22721E41B0028FB1E /* LoginFormViewModel.swift */,
 				EF8ED7B6272313590028FB1E /* RegisterFormViewModel.swift */,
 				EFF5571727189C6D00ADBD5A /* RemindersGroupViewModel.swift */,
+				EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */,
+				EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */,
+				EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -139,6 +156,7 @@
 				EF501DB9270E15260083FDF9 /* ReminderMockProvider.swift */,
 				EF501DBB270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift */,
 				EFF557192718A36F00ADBD5A /* RemindersGroupViewMockProvider.swift */,
+				EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -255,6 +273,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = EFD585E2270902A700581BD7;
 			packageReferences = (
@@ -289,6 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF501DAE270CE65C0083FDF9 /* Dosage.swift in Sources */,
+				EFCA0964274017400005DB6C /* SettingsPage.swift in Sources */,
+				EFCA097027402F840005DB6C /* SettingsOptionMockProvider.swift in Sources */,
 				EFF557212718AB1800ADBD5A /* DrugMockProvider.swift in Sources */,
 				EF8ED7B52721F0020028FB1E /* LoginFormView.swift in Sources */,
 				EF3C4D8327232E5100802F31 /* AuthRepository.swift in Sources */,
@@ -298,15 +319,19 @@
 				EF501DBC270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift in Sources */,
 				EF501DAC270CE5620083FDF9 /* Interval.swift in Sources */,
 				EFF5571A2718A36F00ADBD5A /* RemindersGroupViewMockProvider.swift in Sources */,
+				EFCA096C27401E640005DB6C /* SettingsOptionsGroupViewModel.swift in Sources */,
 				EFF557122718900E00ADBD5A /* RemindersPage.swift in Sources */,
 				EF631D8A270B7C3B00CEED62 /* RemindersRepository.swift in Sources */,
 				EF501DAA270CE46B0083FDF9 /* Reminder.swift in Sources */,
+				EFCA096A27401B1C0005DB6C /* SettingsOptionViewModel.swift in Sources */,
 				EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */,
 				EF3C4D7E27231D8F00802F31 /* RegisterPage.swift in Sources */,
 				EF501DBA270E15260083FDF9 /* ReminderMockProvider.swift in Sources */,
 				EF501DB6270E0A060083FDF9 /* MockProvider.swift in Sources */,
 				EF3C4D8027231DC800802F31 /* LoginPage.swift in Sources */,
 				EF631D86270B766C00CEED62 /* Drug.swift in Sources */,
+				EFCA096E27401FA80005DB6C /* SettingsPageViewModel.swift in Sources */,
+				EFCA096827401A6A0005DB6C /* SettingsOptionView.swift in Sources */,
 				EFF5571827189C6D00ADBD5A /* RemindersGroupViewModel.swift in Sources */,
 				EFF5571C2718A76200ADBD5A /* IntervalMockProvider.swift in Sources */,
 				CEE880C9FB52B008B78B4F07 /* README.md in Sources */,
@@ -323,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -384,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

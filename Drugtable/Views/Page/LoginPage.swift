@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginPage: View {
     var body: some View {
-        LoginFormView()
+        LoginFormView().navigationBarTitle("Log in")
     }
 }
 
