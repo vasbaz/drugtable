@@ -13,12 +13,11 @@ struct SettingsOptionView: View {
     @ViewBuilder func resolveDestination(optionType: OptionType) -> some View {
         switch optionType {
         case .login:
-            LoginPage();
+            LoginPageView();
         case .register:
-            RegisterPage();
+            RegisterPageView();
         default:
             EmptyView();
-//                throw SettingsOptionsError.routing
         }
     }
     

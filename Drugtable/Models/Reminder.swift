@@ -7,9 +7,11 @@
 
 import Foundation
 
+typealias ReminderId = String
+
 struct Reminder: Hashable, Codable, Identifiable {
-    let id: String
+    let id: ReminderId
     let drug: Drug
     let dosage: Dosage
-    let interval: Interval
+    let intervalId: IntervalId
 }

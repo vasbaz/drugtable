@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		CEE880C9FB52B008B78B4F07 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CEE8849570780CD10C021E99 /* README.md */; };
 		EF015FC02709AE490040D8CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */; };
-		EF3C4D7E27231D8F00802F31 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C4D7D27231D8F00802F31 /* RegisterPage.swift */; };
-		EF3C4D8027231DC800802F31 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C4D7F27231DC800802F31 /* LoginPage.swift */; };
+		EF3C4D7E27231D8F00802F31 /* RegisterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C4D7D27231D8F00802F31 /* RegisterPageView.swift */; };
+		EF3C4D8027231DC800802F31 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C4D7F27231DC800802F31 /* LoginPageView.swift */; };
 		EF3C4D8327232E5100802F31 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C4D8227232E5100802F31 /* AuthRepository.swift */; };
 		EF3C4D97272477DE00802F31 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EF3C4D96272477DE00802F31 /* FirebaseAnalytics */; };
 		EF3C4D99272477DE00802F31 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EF3C4D98272477DE00802F31 /* FirebaseAuth */; };
@@ -34,8 +34,11 @@
 		EF8ED7B52721F0020028FB1E /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8ED7B42721F0020028FB1E /* LoginFormView.swift */; };
 		EF8ED7B72723135A0028FB1E /* RegisterFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8ED7B6272313590028FB1E /* RegisterFormViewModel.swift */; };
 		EF8ED7B9272315020028FB1E /* RegisterFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8ED7B8272315020028FB1E /* RegisterFormView.swift */; };
-		EFAB1C2B2741584B00BF7897 /* IntervalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB1C2A2741584B00BF7897 /* IntervalTheme.swift */; };
-		EFCA0964274017400005DB6C /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA0963274017400005DB6C /* SettingsPage.swift */; };
+		EFAB1C2D274190F500BF7897 /* IntervalsArrayMock.json in Resources */ = {isa = PBXBuildFile; fileRef = EFAB1C2C274190F500BF7897 /* IntervalsArrayMock.json */; };
+		EFAB1C2F2741921200BF7897 /* IntervalsArrayMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB1C2E2741921200BF7897 /* IntervalsArrayMockProvider.swift */; };
+		EFAB1C322741940900BF7897 /* RemindersPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB1C312741940900BF7897 /* RemindersPageViewModel.swift */; };
+		EFAB1C342741960000BF7897 /* IntervalsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB1C332741960000BF7897 /* IntervalsRepository.swift */; };
+		EFCA0964274017400005DB6C /* SettingsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA0963274017400005DB6C /* SettingsPageView.swift */; };
 		EFCA096827401A6A0005DB6C /* SettingsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */; };
 		EFCA096A27401B1C0005DB6C /* SettingsOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */; };
 		EFCA096C27401E640005DB6C /* SettingsOptionsGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */; };
@@ -44,7 +47,7 @@
 		EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD585EE270902A700581BD7 /* DrugtableApp.swift */; };
 		EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD585F2270902A800581BD7 /* Assets.xcassets */; };
 		EFD585F6270902A800581BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD585F5270902A800581BD7 /* Preview Assets.xcassets */; };
-		EFF557122718900E00ADBD5A /* RemindersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF557112718900E00ADBD5A /* RemindersPage.swift */; };
+		EFF557122718900E00ADBD5A /* RemindersPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF557112718900E00ADBD5A /* RemindersPageView.swift */; };
 		EFF5571827189C6D00ADBD5A /* RemindersGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF5571727189C6D00ADBD5A /* RemindersGroupViewModel.swift */; };
 		EFF5571A2718A36F00ADBD5A /* RemindersGroupViewMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF557192718A36F00ADBD5A /* RemindersGroupViewMockProvider.swift */; };
 		EFF5571C2718A76200ADBD5A /* IntervalMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF5571B2718A76200ADBD5A /* IntervalMockProvider.swift */; };
@@ -56,8 +59,8 @@
 		CEE8849570780CD10C021E99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF2E9907271CC37C00A47EB6 /* Drugtable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drugtable.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF3C4D7D27231D8F00802F31 /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
-		EF3C4D7F27231DC800802F31 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		EF3C4D7D27231D8F00802F31 /* RegisterPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageView.swift; sourceTree = "<group>"; };
+		EF3C4D7F27231DC800802F31 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		EF3C4D8227232E5100802F31 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		EF501DA4270CD5830083FDF9 /* ReminderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRowView.swift; sourceTree = "<group>"; };
 		EF501DA9270CE46B0083FDF9 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
@@ -74,8 +77,11 @@
 		EF8ED7B42721F0020028FB1E /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
 		EF8ED7B6272313590028FB1E /* RegisterFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormViewModel.swift; sourceTree = "<group>"; };
 		EF8ED7B8272315020028FB1E /* RegisterFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormView.swift; sourceTree = "<group>"; };
-		EFAB1C2A2741584B00BF7897 /* IntervalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTheme.swift; sourceTree = "<group>"; };
-		EFCA0963274017400005DB6C /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		EFAB1C2C274190F500BF7897 /* IntervalsArrayMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IntervalsArrayMock.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		EFAB1C2E2741921200BF7897 /* IntervalsArrayMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsArrayMockProvider.swift; sourceTree = "<group>"; };
+		EFAB1C312741940900BF7897 /* RemindersPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersPageViewModel.swift; sourceTree = "<group>"; };
+		EFAB1C332741960000BF7897 /* IntervalsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsRepository.swift; sourceTree = "<group>"; };
+		EFCA0963274017400005DB6C /* SettingsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPageView.swift; sourceTree = "<group>"; };
 		EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionView.swift; sourceTree = "<group>"; };
 		EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionViewModel.swift; sourceTree = "<group>"; };
 		EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsGroupViewModel.swift; sourceTree = "<group>"; };
@@ -84,7 +90,7 @@
 		EFD585EE270902A700581BD7 /* DrugtableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugtableApp.swift; sourceTree = "<group>"; };
 		EFD585F2270902A800581BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFD585F5270902A800581BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EFF557112718900E00ADBD5A /* RemindersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersPage.swift; sourceTree = "<group>"; };
+		EFF557112718900E00ADBD5A /* RemindersPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersPageView.swift; sourceTree = "<group>"; };
 		EFF5571727189C6D00ADBD5A /* RemindersGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersGroupViewModel.swift; sourceTree = "<group>"; };
 		EFF557192718A36F00ADBD5A /* RemindersGroupViewMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersGroupViewMockProvider.swift; sourceTree = "<group>"; };
 		EFF5571B2718A76200ADBD5A /* IntervalMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalMockProvider.swift; sourceTree = "<group>"; };
@@ -110,26 +116,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EF3C4D8127231DDC00802F31 /* Page */ = {
+		EF3C4D8127231DDC00802F31 /* PageViews */ = {
 			isa = PBXGroup;
 			children = (
-				EF3C4D7F27231DC800802F31 /* LoginPage.swift */,
-				EF3C4D7D27231D8F00802F31 /* RegisterPage.swift */,
-				EFF557112718900E00ADBD5A /* RemindersPage.swift */,
-				EFCA0963274017400005DB6C /* SettingsPage.swift */,
+				EF3C4D7F27231DC800802F31 /* LoginPageView.swift */,
+				EF3C4D7D27231D8F00802F31 /* RegisterPageView.swift */,
+				EFF557112718900E00ADBD5A /* RemindersPageView.swift */,
+				EFCA0963274017400005DB6C /* SettingsPageView.swift */,
 			);
-			path = Page;
+			path = PageViews;
 			sourceTree = "<group>";
 		};
 		EF501DA0270CD4940083FDF9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EF3C4D8127231DDC00802F31 /* Page */,
 				EF8ED7B42721F0020028FB1E /* LoginFormView.swift */,
 				EF8ED7B8272315020028FB1E /* RegisterFormView.swift */,
 				EF501DA4270CD5830083FDF9 /* ReminderRowView.swift */,
 				EF501DB2270E04B30083FDF9 /* RemindersGroupView.swift */,
 				EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */,
+				EF3C4D8127231DDC00802F31 /* PageViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,9 +146,9 @@
 				EF8ED7B22721E41B0028FB1E /* LoginFormViewModel.swift */,
 				EF8ED7B6272313590028FB1E /* RegisterFormViewModel.swift */,
 				EFF5571727189C6D00ADBD5A /* RemindersGroupViewModel.swift */,
-				EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */,
 				EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */,
-				EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */,
+				EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */,
+				EFAB1C30274193AB00BF7897 /* PageViewModels */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -150,15 +156,16 @@
 		EF501DB4270E06F70083FDF9 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				EF501DB8270E14960083FDF9 /* JSONs */,
-				EF501DB5270E0A060083FDF9 /* MockProvider.swift */,
 				EFF5571E2718AAC900ADBD5A /* DosageMockProvider.swift */,
 				EFF557202718AB1800ADBD5A /* DrugMockProvider.swift */,
 				EFF5571B2718A76200ADBD5A /* IntervalMockProvider.swift */,
+				EFAB1C2E2741921200BF7897 /* IntervalsArrayMockProvider.swift */,
+				EF501DB5270E0A060083FDF9 /* MockProvider.swift */,
 				EF501DB9270E15260083FDF9 /* ReminderMockProvider.swift */,
 				EF501DBB270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift */,
 				EFF557192718A36F00ADBD5A /* RemindersGroupViewMockProvider.swift */,
 				EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */,
+				EF501DB8270E14960083FDF9 /* JSONs */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				EF631D83270B75CE00CEED62 /* RemindersArrayMock.json */,
+				EFAB1C2C274190F500BF7897 /* IntervalsArrayMock.json */,
 			);
 			path = JSONs;
 			sourceTree = "<group>";
@@ -174,11 +182,10 @@
 		EF631D87270B794400CEED62 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EF631D85270B766C00CEED62 /* Drug.swift */,
-				EF501DA9270CE46B0083FDF9 /* Reminder.swift */,
-				EF501DAB270CE5620083FDF9 /* Interval.swift */,
 				EF501DAD270CE65C0083FDF9 /* Dosage.swift */,
-				EFAB1C2A2741584B00BF7897 /* IntervalTheme.swift */,
+				EF631D85270B766C00CEED62 /* Drug.swift */,
+				EF501DAB270CE5620083FDF9 /* Interval.swift */,
+				EF501DA9270CE46B0083FDF9 /* Reminder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,8 +195,18 @@
 			children = (
 				EF3C4D8227232E5100802F31 /* AuthRepository.swift */,
 				EF631D89270B7C3B00CEED62 /* RemindersRepository.swift */,
+				EFAB1C332741960000BF7897 /* IntervalsRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EFAB1C30274193AB00BF7897 /* PageViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EFAB1C312741940900BF7897 /* RemindersPageViewModel.swift */,
+				EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */,
+			);
+			path = PageViewModels;
 			sourceTree = "<group>";
 		};
 		EFD585E2270902A700581BD7 = {
@@ -204,15 +221,15 @@
 		EFD585ED270902A700581BD7 /* Drugtable */ = {
 			isa = PBXGroup;
 			children = (
-				EF501DB4270E06F70083FDF9 /* Mocks */,
-				EF631D88270B7C0F00CEED62 /* Repositories */,
-				EF631D87270B794400CEED62 /* Models */,
-				EF501DA6270CE2A60083FDF9 /* ViewModels */,
-				EF501DA0270CD4940083FDF9 /* Views */,
+				EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */,
 				EFD585EE270902A700581BD7 /* DrugtableApp.swift */,
 				EFD585F2270902A800581BD7 /* Assets.xcassets */,
-				EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */,
+				EF501DB4270E06F70083FDF9 /* Mocks */,
+				EF631D87270B794400CEED62 /* Models */,
 				EFD585F4270902A800581BD7 /* Preview Content */,
+				EF631D88270B7C0F00CEED62 /* Repositories */,
+				EF501DA6270CE2A60083FDF9 /* ViewModels */,
+				EF501DA0270CD4940083FDF9 /* Views */,
 			);
 			path = Drugtable;
 			sourceTree = "<group>";
@@ -300,6 +317,7 @@
 				EFD585F6270902A800581BD7 /* Preview Assets.xcassets in Resources */,
 				EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */,
 				EF015FC02709AE490040D8CA /* GoogleService-Info.plist in Resources */,
+				EFAB1C2D274190F500BF7897 /* IntervalsArrayMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,28 +329,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF501DAE270CE65C0083FDF9 /* Dosage.swift in Sources */,
-				EFCA0964274017400005DB6C /* SettingsPage.swift in Sources */,
+				EFCA0964274017400005DB6C /* SettingsPageView.swift in Sources */,
 				EFCA097027402F840005DB6C /* SettingsOptionMockProvider.swift in Sources */,
 				EFF557212718AB1800ADBD5A /* DrugMockProvider.swift in Sources */,
 				EF8ED7B52721F0020028FB1E /* LoginFormView.swift in Sources */,
 				EF3C4D8327232E5100802F31 /* AuthRepository.swift in Sources */,
-				EFAB1C2B2741584B00BF7897 /* IntervalTheme.swift in Sources */,
 				EF501DB3270E04B30083FDF9 /* RemindersGroupView.swift in Sources */,
 				EF501DA5270CD5830083FDF9 /* ReminderRowView.swift in Sources */,
+				EFAB1C342741960000BF7897 /* IntervalsRepository.swift in Sources */,
 				EFF5571F2718AAC900ADBD5A /* DosageMockProvider.swift in Sources */,
 				EF501DBC270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift in Sources */,
 				EF501DAC270CE5620083FDF9 /* Interval.swift in Sources */,
 				EFF5571A2718A36F00ADBD5A /* RemindersGroupViewMockProvider.swift in Sources */,
 				EFCA096C27401E640005DB6C /* SettingsOptionsGroupViewModel.swift in Sources */,
-				EFF557122718900E00ADBD5A /* RemindersPage.swift in Sources */,
+				EFF557122718900E00ADBD5A /* RemindersPageView.swift in Sources */,
+				EFAB1C2F2741921200BF7897 /* IntervalsArrayMockProvider.swift in Sources */,
 				EF631D8A270B7C3B00CEED62 /* RemindersRepository.swift in Sources */,
 				EF501DAA270CE46B0083FDF9 /* Reminder.swift in Sources */,
 				EFCA096A27401B1C0005DB6C /* SettingsOptionViewModel.swift in Sources */,
+				EFAB1C322741940900BF7897 /* RemindersPageViewModel.swift in Sources */,
 				EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */,
-				EF3C4D7E27231D8F00802F31 /* RegisterPage.swift in Sources */,
+				EF3C4D7E27231D8F00802F31 /* RegisterPageView.swift in Sources */,
 				EF501DBA270E15260083FDF9 /* ReminderMockProvider.swift in Sources */,
 				EF501DB6270E0A060083FDF9 /* MockProvider.swift in Sources */,
-				EF3C4D8027231DC800802F31 /* LoginPage.swift in Sources */,
+				EF3C4D8027231DC800802F31 /* LoginPageView.swift in Sources */,
 				EF631D86270B766C00CEED62 /* Drug.swift in Sources */,
 				EFCA096E27401FA80005DB6C /* SettingsPageViewModel.swift in Sources */,
 				EFCA096827401A6A0005DB6C /* SettingsOptionView.swift in Sources */,

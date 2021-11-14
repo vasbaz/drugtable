@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RemindersGroupView: View {
-    let reminders: [Reminder]
+    let viewModel: RemindersGroupViewModel
     
     @ViewBuilder func resolveBackground(theme: IntervalTheme?) -> some View {
         switch theme {
@@ -21,17 +21,18 @@ struct RemindersGroupView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Morning").font(.title)
-            ForEach (reminders) {
+            Text(viewModel.interval.name).font(.title)
+            ForEach (viewModel.reminders) {
                 reminder in ReminderRowView(reminder: reminder)
             }
-        }.padding(12.0).background(resolveBackground(theme: nil)).cornerRadius(12)
+        }.padding(12.0).background(resolveBackground(theme: viewModel.interval.theme)).cornerRadius(12)
     }
 }
 
 struct RemindersGroupView_Previews: PreviewProvider {
+    static let remindersGroupViewMock = RemindersGroupViewMockProvider().getMock()
+    
     static var previews: some View {
-        let reminders = RemindersArrayMockProvider().getMock()
-        RemindersGroupView(reminders: reminders)
+        RemindersGroupView(viewModel: remindersGroupViewMock)
     }
 }

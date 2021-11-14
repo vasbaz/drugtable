@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct RegisterPage: View {
+struct RegisterPageView: View {
     var body: some View {
         RegisterFormView().navigationBarTitle("Register")
     }
 }
 
-struct RegisterPage_Previews: PreviewProvider {
+struct RegisterPageView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterPage()
+        RegisterPageView()
     }
 }

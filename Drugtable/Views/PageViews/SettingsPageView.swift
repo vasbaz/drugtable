@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SettingsPage: View {
+struct SettingsPageView: View {
     let viewModel: SettingsPageViewModel
     
     var body: some View {
@@ -23,10 +23,10 @@ struct SettingsPage: View {
     }
 }
 
-struct SettingsPage_Previews: PreviewProvider {
+struct SettingsPageView_Previews: PreviewProvider {
     static let viewModel = SettingsPageViewModel()
     
     static var previews: some View {
-        SettingsPage(viewModel: viewModel)
+        SettingsPageView(viewModel: viewModel)
     }
 }

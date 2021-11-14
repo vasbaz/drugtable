@@ -1,0 +1,14 @@
+[
+    {
+        "id": "0",
+        "order": 0,
+        "name": "Morning",
+        "theme": "warmOrange"
+    },
+    {
+        "id": "1",
+        "order": 1,
+        "name": "After dinner",
+        "theme": "blueGreen"
+    },
+]

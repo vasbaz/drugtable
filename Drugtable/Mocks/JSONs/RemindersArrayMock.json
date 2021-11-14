@@ -8,10 +8,7 @@
         "dosage": {
             "amount": "3 pills"
         },
-        "interval": {
-            "time": "After dinner",
-            "theme": "warmOrange"
-        }
+        "intervalId": "0"
     },
     {
         "id": "2",
@@ -22,10 +19,7 @@
         "dosage": {
             "amount": "2 pills"
         },
-        "interval": {
-            "time": "After dinner",
-            "theme": "warmOrange"
-        }
+        "intervalId": "0"
     },
     {
         "id": "3",
@@ -36,9 +30,6 @@
         "dosage": {
             "amount": "1 injection"
         },
-        "interval": {
-            "time": "Morning",
-            "theme": "warmOrange"
-        }
+        "intervalId": "1"
     }
 ]

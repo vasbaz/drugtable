@@ -9,6 +9,6 @@ import Foundation
 
 class IntervalMockProvider: MockProvider {
     func getMock() -> Interval {
-        Interval(time: "After dinner", theme: .warmOrange)
+        Interval(id: "0", order: 0, name: "After dinner", theme: .warmOrange)
     }
 }

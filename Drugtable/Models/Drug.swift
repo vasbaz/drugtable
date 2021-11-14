@@ -7,7 +7,9 @@
 
 import Foundation
 
+typealias DrugId = String
+
 struct Drug: Hashable, Codable, Identifiable {
-    let id: String
+    let id: DrugId
     let name: String
 }

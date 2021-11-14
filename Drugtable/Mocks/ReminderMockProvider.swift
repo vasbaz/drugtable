@@ -13,6 +13,6 @@ class ReminderMockProvider: MockProvider {
     let drugTakingTimeMock = IntervalMockProvider().getMock()
     
     func getMock() -> Reminder {
-        Reminder(id: "0", drug: drugMock, dosage: dosageMock, interval: drugTakingTimeMock)
+        Reminder(id: "0", drug: drugMock, dosage: dosageMock, intervalId: drugTakingTimeMock.id)
     }
 }
