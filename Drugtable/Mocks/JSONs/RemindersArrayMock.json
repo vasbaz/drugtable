@@ -1,10 +1,7 @@
 [
     {
         "id": "1",
-        "drug": {
-            "id": "1",
-            "name": "Galoperidol"
-        },
+        "drugId": "1",
         "dosage": {
             "amount": "3 pills"
         },
@@ -12,10 +9,7 @@
     },
     {
         "id": "2",
-        "drug": {
-            "id": "2",
-            "name": "Nurofen"
-        },
+        "drugId": "2",
         "dosage": {
             "amount": "2 pills"
         },
@@ -23,10 +17,7 @@
     },
     {
         "id": "3",
-        "drug": {
-            "id": "3",
-            "name": "Tizin"
-        },
+        "drugId": "3",
         "dosage": {
             "amount": "1 injection"
         },

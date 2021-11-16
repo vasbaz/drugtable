@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RegisterFormViewModel: ObservableObject {
+final class RegisterFormViewModel: ObservableObject {
     @Published var email: String
     @Published var password: String
     @Published var passwordRepeat: String

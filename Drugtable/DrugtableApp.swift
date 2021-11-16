@@ -10,21 +10,14 @@ import Firebase
 
 @main
 struct DrugtableApp: App {
-    let remindersRepository: RemindersRepository
-    let intervalsRepository: IntervalsRepository
-    let remindersPageViewModel: RemindersPageViewModel
-    
     init() {
         FirebaseApp.configure()
-        remindersRepository = MockRemindersRepository()
-        intervalsRepository = MockIntervalsRepository()
-        remindersPageViewModel = RemindersPageViewModel(remindersRepository: remindersRepository, intervalsRepository: intervalsRepository)
     }
     
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                RemindersPageView(viewModel: remindersPageViewModel)
+                MainPageView()
             }
         }
     }

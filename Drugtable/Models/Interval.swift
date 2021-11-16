@@ -5,8 +5,6 @@
 //  Created by Danila Vasilchenko-Bazarov on 05.10.2021.
 //
 
-import Foundation
-
 typealias IntervalId = String
 
 enum IntervalTheme: String, Codable {

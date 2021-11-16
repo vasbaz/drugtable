@@ -5,8 +5,6 @@
 //  Created by Danila Vasilchenko-Bazarov on 13.11.2021.
 //
 
-import Foundation
-
 struct SettingsPageViewModel {
     var groups: [SettingsOptionsGroupViewModel] {
         get {
@@ -34,9 +32,9 @@ struct SettingsPageViewModel {
             SettingsOptionsGroupViewModel(
                 title: "General",
                 options: [
-                    SettingsOptionViewModel(title: "My drugs", optionType: .myDrugs),
-                    SettingsOptionViewModel(title: "Reminders", optionType: .reminders),
-                    SettingsOptionViewModel(title: "Intervals", optionType: .intervals),
+                    SettingsOptionViewModel(title: "Reminders", optionType: .remindersList),
+                    SettingsOptionViewModel(title: "My drugs", optionType: .drugsList),
+                    SettingsOptionViewModel(title: "Intervals", optionType: .intervalsList),
                 ]
             )
         }

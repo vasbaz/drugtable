@@ -5,13 +5,12 @@
 //  Created by Danila Vasilchenko-Bazarov on 14.11.2021.
 //
 
-import Foundation
-
 protocol IntervalsRepository {
     func getIntervals() -> [Interval]
 }
 
-class MockIntervalsRepository: IntervalsRepository {
+final class MockIntervalsRepository: IntervalsRepository, Singleton {
+    static let shared = MockIntervalsRepository()
     let provider = IntervalsArrayMockProvider()
     var intervals: [Interval]
     

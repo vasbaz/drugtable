@@ -5,10 +5,9 @@
 //  Created by Danila Vasilchenko-Bazarov on 22.10.2021.
 //
 
-import Foundation
 import Firebase
 
-class AuthRepository {
+final class AuthRepository: Singleton {
     static let shared = AuthRepository()
     
     let auth: Auth

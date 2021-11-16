@@ -5,13 +5,12 @@
 //  Created by Danila Vasilchenko-Bazarov on 04.10.2021.
 //
 
-import Foundation
-
 protocol RemindersRepository {
     func getReminders() -> [Reminder]
 }
 
-class MockRemindersRepository: RemindersRepository {
+final class MockRemindersRepository: RemindersRepository, Singleton {
+    static let shared = MockRemindersRepository()
     let provider = RemindersArrayMockProvider()
     var reminders: [Reminder]
     

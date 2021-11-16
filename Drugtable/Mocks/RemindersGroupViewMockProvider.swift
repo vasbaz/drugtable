@@ -5,11 +5,9 @@
 //  Created by Danila Vasilchenko-Bazarov on 14.10.2021.
 //
 
-import Foundation
-
-class RemindersGroupViewMockProvider: MockProvider {
-    let reminders = RemindersArrayMockProvider().getMock()
-    let interval = IntervalMockProvider().getMock()
-    
-    func getMock() -> RemindersGroupViewModel { RemindersGroupViewModel(interval: interval, reminders: reminders) }
-}
+//class RemindersGroupViewMockProvider: MockProvider {
+//    let reminders = RemindersArrayMockProvider().getMock()
+//    let interval = IntervalMockProvider().getMock()
+//
+//    func getMock() -> RemindersGroupViewModel { RemindersGroupViewModel(interval: interval, reminders: reminders) }
+//}

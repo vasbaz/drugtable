@@ -16,6 +16,12 @@ struct SettingsOptionView: View {
             LoginPageView();
         case .register:
             RegisterPageView();
+        case .remindersList:
+            RemindersListPageView();
+        case .drugsList:
+            DrugsListPageView();
+        case .intervalsList:
+            IntervalsListPageView();
         default:
             EmptyView();
         }

@@ -7,18 +7,18 @@
 
 import Foundation
 
-class RemindersGroupViewModel: Identifiable {
+final class RemindersGroupViewModel: Identifiable {
     let id = UUID()
     let interval: Interval
-    var reminders: [Reminder]
+    var reminderViewModels: [ReminderViewModel]
     
     init(interval: Interval) {
         self.interval = interval
-        self.reminders = []
+        self.reminderViewModels = []
     }
     
-    init(interval: Interval, reminders: [Reminder]) {
+    init(interval: Interval, reminderViewModels: [ReminderViewModel]) {
         self.interval = interval
-        self.reminders = reminders
+        self.reminderViewModels = reminderViewModels
     }
 }
