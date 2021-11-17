@@ -11,4 +11,10 @@
         "name": "After dinner",
         "theme": "blueGreen"
     },
+    {
+        "id": "2",
+        "order": 2,
+        "name": "Before sleep",
+        "theme": "night"
+    },
 ]

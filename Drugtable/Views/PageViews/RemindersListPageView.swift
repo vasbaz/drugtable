@@ -11,9 +11,21 @@ struct RemindersListPageView: View {
     let viewModel = RemindersListPageViewModel();
     
     var body: some View {
-        List {
-            ForEach (viewModel.reminderViewModels) {
-                reminderViewModel in MainPageReminderRowView(viewModel: reminderViewModel)
+        VStack {
+            List {
+                ForEach (viewModel.reminderViewModels) {
+                    reminderViewModel in ListPageReminderRowView(viewModel: reminderViewModel)
+                }
+            }
+            HStack{
+                Spacer()
+                Button(action: {}) {
+                    HStack {
+                        Text("Add reminder")
+                        Image(systemName: "plus")
+                    }
+                    .padding(12.0)
+                }
             }
         }.navigationBarTitle("Edit reminders")
     }

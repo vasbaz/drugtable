@@ -60,6 +60,8 @@
 		EFF557122718900E00ADBD5A /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF557112718900E00ADBD5A /* MainPageView.swift */; };
 		EFF5571827189C6D00ADBD5A /* RemindersGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF5571727189C6D00ADBD5A /* RemindersGroupViewModel.swift */; };
 		EFF5571F2718AAC900ADBD5A /* DosageMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF5571E2718AAC900ADBD5A /* DosageMockProvider.swift */; };
+		EFF8F2592745A07B006EB3B6 /* ListPageReminderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8F2582745A07B006EB3B6 /* ListPageReminderRowView.swift */; };
+		EFF8F25B2745A24C006EB3B6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8F25A2745A24C006EB3B6 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +112,8 @@
 		EFF557112718900E00ADBD5A /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		EFF5571727189C6D00ADBD5A /* RemindersGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersGroupViewModel.swift; sourceTree = "<group>"; };
 		EFF5571E2718AAC900ADBD5A /* DosageMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageMockProvider.swift; sourceTree = "<group>"; };
+		EFF8F2582745A07B006EB3B6 /* ListPageReminderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPageReminderRowView.swift; sourceTree = "<group>"; };
+		EFF8F25A2745A24C006EB3B6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				EF8ED7B42721F0020028FB1E /* LoginFormView.swift */,
 				EF501DA4270CD5830083FDF9 /* MainPageReminderRowView.swift */,
 				EF501DB2270E04B30083FDF9 /* MainPageRemindersGroupView.swift */,
+				EFF8F2582745A07B006EB3B6 /* ListPageReminderRowView.swift */,
 				EF8ED7B8272315020028FB1E /* RegisterFormView.swift */,
 				EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */,
 				EF3C4D8127231DDC00802F31 /* PageViews */,
@@ -233,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				EFAB1C4C2744453C00BF7897 /* Singleton.swift */,
+				EFF8F25A2745A24C006EB3B6 /* Color.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFAB1C42274423FF00BF7897 /* DrugsRepository.swift in Sources */,
+				EFF8F25B2745A24C006EB3B6 /* Color.swift in Sources */,
 				EF501DAE270CE65C0083FDF9 /* Dosage.swift in Sources */,
 				EFAB1C3A2744163A00BF7897 /* DrugsListPageView.swift in Sources */,
 				EFCA0964274017400005DB6C /* SettingsPageView.swift in Sources */,
@@ -395,6 +402,7 @@
 				CEE880C9FB52B008B78B4F07 /* README.md in Sources */,
 				EFAB1C44274424C900BF7897 /* DrugsArrayMockProvider.swift in Sources */,
 				EF8ED7B9272315020028FB1E /* RegisterFormView.swift in Sources */,
+				EFF8F2592745A07B006EB3B6 /* ListPageReminderRowView.swift in Sources */,
 				EF8ED7B32721E41B0028FB1E /* LoginFormViewModel.swift in Sources */,
 				EFAB1C4827442BB300BF7897 /* ReminderViewModel.swift in Sources */,
 				EF8ED7B72723135A0028FB1E /* RegisterFormViewModel.swift in Sources */,

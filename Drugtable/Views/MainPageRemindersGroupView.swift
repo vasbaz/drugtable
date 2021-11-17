@@ -13,15 +13,18 @@ struct MainPageRemindersGroupView: View {
     @ViewBuilder func resolveBackground(theme: IntervalTheme?) -> some View {
         switch theme {
         case .warmOrange:
-            LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [Color(hex: "#FFF2994A"), Color.orange]), startPoint: .top, endPoint: .bottom)
+        case .blueGreen:
+            LinearGradient(gradient: Gradient(colors: [Color(hex: "#FF667db6"), Color(hex: "#FF0082c8")]), startPoint: .top, endPoint: .bottom)
         default:
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.green]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [Color(hex: "#FF283c86"), Color(hex: "#FF0082c8")]), startPoint: .top, endPoint: .bottom)
         }
     }
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(viewModel.interval.name).font(.title)
+            Text(viewModel.interval.name)
+                .font(.title)
             ForEach (viewModel.reminderViewModels) {
                 reminderViewModel in MainPageReminderRowView(viewModel: reminderViewModel)
             }

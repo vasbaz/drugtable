@@ -15,7 +15,9 @@ struct MainPageReminderRowView: View {
             Text(viewModel.drug.name)
             Spacer()
             Text(String(viewModel.reminder.dosage.amount))
-        }.padding()
+        }
+        .padding(.horizontal, 12.0)
+        .padding(.vertical, 6.0)
     }
 }
 

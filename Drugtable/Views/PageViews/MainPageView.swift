@@ -16,8 +16,15 @@ struct MainPageView: View {
                 ForEach (viewModel.remindersGroups) { group in MainPageRemindersGroupView(viewModel: group) }
             }
             .listStyle(.plain)
-            NavigationLink(destination: SettingsPageView(viewModel: SettingsPageViewModel())) {
-                Text("Settings")
+            HStack{
+                Spacer()
+                NavigationLink(destination: SettingsPageView(viewModel: SettingsPageViewModel())) {
+                    HStack {
+                        Text("Settings")
+                        Image(systemName: "gear")
+                    }
+                    .padding(12.0)
+                }
             }
         }
         .navigationBarTitle("Reminders")

@@ -22,5 +22,29 @@
             "amount": "1 injection"
         },
         "intervalId": "1"
+    },
+    {
+        "id": "4",
+        "drugId": "1",
+        "dosage": {
+            "amount": "3 pills"
+        },
+        "intervalId": "2"
+    },
+    {
+        "id": "5",
+        "drugId": "2",
+        "dosage": {
+            "amount": "2 pills"
+        },
+        "intervalId": "2"
+    },
+    {
+        "id": "6",
+        "drugId": "3",
+        "dosage": {
+            "amount": "1 injection"
+        },
+        "intervalId": "2"
     }
 ]
