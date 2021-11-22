@@ -8,10 +8,33 @@
 import SwiftUI
 
 struct IntervalsListPageView: View {
+    let viewModel = IntervalsListPageViewModel();
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).navigationBarTitle("Edit intervals")
+        VStack {
+            List {
+                ForEach (viewModel.intervals) {
+                    interval in HStack{
+                        Text(interval.name)
+                        Spacer()
+                        Text(String(interval.order)).font(.subheadline)
+                    }
+                }
+            }
+            HStack{
+                Spacer()
+                Button(action: {}) {
+                    HStack {
+                        Text("Add interval")
+                        Image(systemName: "plus")
+                    }
+                    .padding(12.0)
+                }
+            }
+        }.navigationBarTitle("Edit intervals")
     }
 }
+
 
 struct IntervalsListPageView_Previews: PreviewProvider {
     static var previews: some View {

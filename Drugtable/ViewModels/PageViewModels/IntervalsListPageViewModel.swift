@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+final class IntervalsListPageViewModel {
+    let intervalsRepository: IntervalsRepository = MockIntervalsRepository()
+    
+    var intervals: [Interval] = []
+    
+    init() {
+        intervals = intervalsRepository.getIntervals()
+    }
+}

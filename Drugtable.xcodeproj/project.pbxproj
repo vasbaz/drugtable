@@ -151,10 +151,10 @@
 		EF501DA0270CD4940083FDF9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EFF8F2582745A07B006EB3B6 /* ListPageReminderRowView.swift */,
 				EF8ED7B42721F0020028FB1E /* LoginFormView.swift */,
 				EF501DA4270CD5830083FDF9 /* MainPageReminderRowView.swift */,
 				EF501DB2270E04B30083FDF9 /* MainPageRemindersGroupView.swift */,
-				EFF8F2582745A07B006EB3B6 /* ListPageReminderRowView.swift */,
 				EF8ED7B8272315020028FB1E /* RegisterFormView.swift */,
 				EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */,
 				EF3C4D8127231DDC00802F31 /* PageViews */,
@@ -215,9 +215,9 @@
 			isa = PBXGroup;
 			children = (
 				EF3C4D8227232E5100802F31 /* AuthRepository.swift */,
-				EF631D89270B7C3B00CEED62 /* RemindersRepository.swift */,
-				EFAB1C332741960000BF7897 /* IntervalsRepository.swift */,
 				EFAB1C41274423FF00BF7897 /* DrugsRepository.swift */,
+				EFAB1C332741960000BF7897 /* IntervalsRepository.swift */,
+				EF631D89270B7C3B00CEED62 /* RemindersRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
