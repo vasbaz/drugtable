@@ -54,6 +54,7 @@
 		EFCA096C27401E640005DB6C /* SettingsOptionsGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */; };
 		EFCA096E27401FA80005DB6C /* SettingsPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */; };
 		EFCA097027402F840005DB6C /* SettingsOptionMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */; };
+		EFCFE10E274EDA9A000F3F7B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCFE10D274EDA9A000F3F7B /* Colors.xcassets */; };
 		EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD585EE270902A700581BD7 /* DrugtableApp.swift */; };
 		EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD585F2270902A800581BD7 /* Assets.xcassets */; };
 		EFD585F6270902A800581BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD585F5270902A800581BD7 /* Preview Assets.xcassets */; };
@@ -106,6 +107,7 @@
 		EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsGroupViewModel.swift; sourceTree = "<group>"; };
 		EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPageViewModel.swift; sourceTree = "<group>"; };
 		EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionMockProvider.swift; sourceTree = "<group>"; };
+		EFCFE10D274EDA9A000F3F7B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EFD585EE270902A700581BD7 /* DrugtableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugtableApp.swift; sourceTree = "<group>"; };
 		EFD585F2270902A800581BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFD585F5270902A800581BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				EF015FBF2709AE490040D8CA /* GoogleService-Info.plist */,
 				EFD585EE270902A700581BD7 /* DrugtableApp.swift */,
 				EFD585F2270902A800581BD7 /* Assets.xcassets */,
+				EFCFE10D274EDA9A000F3F7B /* Colors.xcassets */,
 				EF501DB4270E06F70083FDF9 /* Mocks */,
 				EF631D87270B794400CEED62 /* Models */,
 				EFD585F4270902A800581BD7 /* Preview Content */,
@@ -354,6 +357,7 @@
 				EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */,
 				EF015FC02709AE490040D8CA /* GoogleService-Info.plist in Resources */,
 				EFAB1C2D274190F500BF7897 /* IntervalsArrayMock.json in Resources */,
+				EFCFE10E274EDA9A000F3F7B /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
