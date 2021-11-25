@@ -3,18 +3,30 @@
         "id": "0",
         "order": 0,
         "name": "Morning",
-        "theme": "warmOrange"
+        "theme": "morning"
     },
     {
         "id": "1",
         "order": 1,
-        "name": "After dinner",
-        "theme": "blueGreen"
+        "name": "Before dinner",
+        "theme": "dayIPart"
     },
     {
         "id": "2",
         "order": 2,
-        "name": "Before sleep",
+        "name": "After dinner",
+        "theme": "dayIIPart"
+    },
+    {
+        "id": "3",
+        "order": 3,
+        "name": "Evening",
+        "theme": "evening"
+    },
+    {
+        "id": "4",
+        "order": 4,
+        "name": "Night",
         "theme": "night"
     },
 ]

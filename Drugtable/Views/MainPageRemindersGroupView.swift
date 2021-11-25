@@ -12,12 +12,19 @@ struct MainPageRemindersGroupView: View {
     
     @ViewBuilder func resolveBackground(theme: IntervalTheme?) -> some View {
         switch theme {
-        case .warmOrange:
-            LinearGradient(gradient: Gradient(colors: [Color(hex: "#FFF2994A"), Color.orange]), startPoint: .top, endPoint: .bottom)
-        case .blueGreen:
-            LinearGradient(gradient: Gradient(colors: [Color(hex: "#FF667db6"), Color(hex: "#FF0082c8")]), startPoint: .top, endPoint: .bottom)
+        case .morning:
+            LinearGradient(colors: [Color("Morning"), Color("DayIPart")])
+        case .dayIPart:
+            LinearGradient(colors: [Color("DayIPart"), Color("DayIIPart")])
+        case .dayIIPart:
+            LinearGradient(colors: [Color("DayIIPart"), Color("Evening")])
+        case .evening:
+            LinearGradient(colors: [Color("Evening"), Color("Night")])
+        case .night:
+            LinearGradient(colors: [Color("Night"), Color("Morning")])
         default:
-            LinearGradient(gradient: Gradient(colors: [Color(hex: "#FF283c86"), Color(hex: "#FF0082c8")]), startPoint: .top, endPoint: .bottom)
+            // ToDo: Default color
+            LinearGradient(colors: [Color("Morning"), Color("DayIPart")])
         }
     }
     

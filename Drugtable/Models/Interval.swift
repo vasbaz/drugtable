@@ -8,7 +8,7 @@
 typealias IntervalId = String
 
 enum IntervalTheme: String, Codable {
-    case warmOrange, blueGreen, night
+    case morning, dayIPart, dayIIPart, evening, night
 }
 
 struct Interval: Hashable, Codable, Identifiable {
