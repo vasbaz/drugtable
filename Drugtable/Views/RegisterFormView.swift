@@ -13,11 +13,11 @@ struct RegisterFormView: View {
     var body: some View {
         Form {
             Section {
-                TextField("Email", text: $registerFormViewModel.email)
+                TextField(LocalizedStringKey("Email address"), text: $registerFormViewModel.email)
             }
             Section {
-                SecureField("Password", text: $registerFormViewModel.password)
-                SecureField("Password repeat", text: $registerFormViewModel.passwordRepeat)
+                SecureField(LocalizedStringKey("Password"), text: $registerFormViewModel.password)
+                SecureField(LocalizedStringKey("Password repeat"), text: $registerFormViewModel.passwordRepeat)
             }
             Section {
                 Button(action: { }) {

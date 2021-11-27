@@ -13,7 +13,7 @@ struct SettingsPageView: View {
     var body: some View {
         List {
             ForEach(viewModel.groups) {
-                group in Section(header: Text(group.title)) {
+                group in Section(header: Text(LocalizedStringKey(group.title))) {
                     ForEach(group.options) {
                         option in SettingsOptionView(option: option)
                     }

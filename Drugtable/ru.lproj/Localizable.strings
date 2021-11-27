@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  Drugtable
+
+  Created by Danila Vasilchenko-Bazarov on 27.11.2021.
+  
+*/
+
+"Reminders" = "Напоминания";
+"Settings" = "Настройки";
+"My drugs" = "Мои лекарства";
+"Account" = "Аккаунт";
+"General" = "Основные";
+"Intervals" = "Интервалы";
+"Edit intervals" = "Интервалы";
+"New interval" = "Новый интервал";
+"Edit reminders" = "Напоминания";
+"Add reminder" = "Добавить напоминание";
+"Log in" = "Войти";
+"Log in | noun" = "Вход";
+"Registration" = "Регистрация";
+"Register" = "Зарегистрироваться";
+"Email address" = "Адрес электронной почты";
+"Login" = "Логин";
+"Password" = "Пароль";
+"Password repeat" = "Повторите пароль";

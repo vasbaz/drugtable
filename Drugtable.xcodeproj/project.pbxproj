@@ -54,6 +54,7 @@
 		EFCA096C27401E640005DB6C /* SettingsOptionsGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */; };
 		EFCA096E27401FA80005DB6C /* SettingsPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */; };
 		EFCA097027402F840005DB6C /* SettingsOptionMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */; };
+		EFCD56632752983D00F20E8C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFCD56652752983D00F20E8C /* Localizable.strings */; };
 		EFCFE10E274EDA9A000F3F7B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCFE10D274EDA9A000F3F7B /* Colors.xcassets */; };
 		EFCFE1102750135B000F3F7B /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFE10F2750135B000F3F7B /* Gradient.swift */; };
 		EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD585EE270902A700581BD7 /* DrugtableApp.swift */; };
@@ -107,6 +108,8 @@
 		EFCA096B27401E640005DB6C /* SettingsOptionsGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsGroupViewModel.swift; sourceTree = "<group>"; };
 		EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPageViewModel.swift; sourceTree = "<group>"; };
 		EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionMockProvider.swift; sourceTree = "<group>"; };
+		EFCD56642752983D00F20E8C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EFCD56662752984D00F20E8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EFCFE10D274EDA9A000F3F7B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EFCFE10F2750135B000F3F7B /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		EFD585EE270902A700581BD7 /* DrugtableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugtableApp.swift; sourceTree = "<group>"; };
@@ -195,9 +198,9 @@
 		EF501DB8270E14960083FDF9 /* JSONs */ = {
 			isa = PBXGroup;
 			children = (
-				EF631D83270B75CE00CEED62 /* RemindersArrayMock.json */,
-				EFAB1C2C274190F500BF7897 /* IntervalsArrayMock.json */,
 				EFAB1C45274427DF00BF7897 /* DrugsArrayMock.json */,
+				EFAB1C2C274190F500BF7897 /* IntervalsArrayMock.json */,
+				EF631D83270B75CE00CEED62 /* RemindersArrayMock.json */,
 			);
 			path = JSONs;
 			sourceTree = "<group>";
@@ -239,8 +242,8 @@
 		EFAB1C4B2744452500BF7897 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				EFAB1C4C2744453C00BF7897 /* Singleton.swift */,
 				EFCFE10F2750135B000F3F7B /* Gradient.swift */,
+				EFAB1C4C2744453C00BF7897 /* Singleton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				EFD585EE270902A700581BD7 /* DrugtableApp.swift */,
 				EFD585F2270902A800581BD7 /* Assets.xcassets */,
 				EFCFE10D274EDA9A000F3F7B /* Colors.xcassets */,
+				EFCD56652752983D00F20E8C /* Localizable.strings */,
 				EF501DB4270E06F70083FDF9 /* Mocks */,
 				EF631D87270B794400CEED62 /* Models */,
 				EFD585F4270902A800581BD7 /* Preview Content */,
@@ -356,6 +360,7 @@
 				EFD585F6270902A800581BD7 /* Preview Assets.xcassets in Resources */,
 				EFD585F3270902A800581BD7 /* Assets.xcassets in Resources */,
 				EF015FC02709AE490040D8CA /* GoogleService-Info.plist in Resources */,
+				EFCD56632752983D00F20E8C /* Localizable.strings in Resources */,
 				EFAB1C2D274190F500BF7897 /* IntervalsArrayMock.json in Resources */,
 				EFCFE10E274EDA9A000F3F7B /* Colors.xcassets in Resources */,
 			);
@@ -414,6 +419,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFCD56652752983D00F20E8C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFCD56642752983D00F20E8C /* ru */,
+				EFCD56662752984D00F20E8C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EFD585F7270902A800581BD7 /* Debug */ = {

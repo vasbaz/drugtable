@@ -25,7 +25,7 @@ struct IntervalsListPageView: View {
                 Spacer()
                 Button(action: {}) {
                     HStack {
-                        Text("Add interval")
+                        Text("New interval")
                         Image(systemName: "plus")
                     }
                     .padding(12.0)

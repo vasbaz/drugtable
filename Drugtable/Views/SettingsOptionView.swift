@@ -30,7 +30,7 @@ struct SettingsOptionView: View {
     var body: some View {
         NavigationLink(destination: resolveDestination(optionType: option.optionType)) {
             HStack {
-                Text(option.title)
+                Text(LocalizedStringKey(option.title))
             }
         }
     }

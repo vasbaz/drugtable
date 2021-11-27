@@ -13,8 +13,8 @@ struct LoginFormView: View {
     var body: some View {
         Form {
             Section {
-                TextField("Login", text: $loginFormViewModel.login)
-                SecureField("Password", text: $loginFormViewModel.password)
+                TextField(LocalizedStringKey("Login"), text: $loginFormViewModel.login)
+                SecureField(LocalizedStringKey("Password"), text: $loginFormViewModel.password)
             }
             Section {
                 Button(action: { }) {

@@ -21,7 +21,7 @@ struct SettingsPageViewModel {
                 title: "Account",
                 options: [
                     SettingsOptionViewModel(title: "Log in", optionType: .login),
-                    SettingsOptionViewModel(title: "Register", optionType: .register)
+                    SettingsOptionViewModel(title: "Registration", optionType: .register)
                 ]
             )
         }
