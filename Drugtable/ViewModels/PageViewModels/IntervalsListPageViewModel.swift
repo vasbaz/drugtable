@@ -6,13 +6,19 @@
 //
 
 import Foundation
+import Combine
 
-final class IntervalsListPageViewModel {
-    let intervalsRepository: IntervalsRepository = MockIntervalsRepository()
+final class IntervalsListPageViewModel: ObservableObject {
+    @Published var intervalsRepository: IntervalsRepository = MockIntervalsRepository()
+    @Published var intervals: [Interval] = []
     
-    var intervals: [Interval] = []
+    private var cancellables = Set<AnyCancellable>()
     
     init() {
-        intervals = intervalsRepository.getIntervals()
+        intervalsRepository
+            .$intervals
+            .receive(on: RunLoop.main)
+            .assign(to: \.intervals, on: self)
+            .store(in: &cancellables)
     }
 }
