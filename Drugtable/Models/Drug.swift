@@ -10,4 +10,5 @@ typealias DrugId = String
 struct Drug: Hashable, Codable, Identifiable {
     let id: DrugId
     let name: String
+    let inListPosition: Int
 }

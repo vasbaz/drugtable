@@ -1,32 +1,32 @@
 [
     {
         "id": "0",
-        "order": 0,
         "name": "Morning",
-        "theme": "morning"
+        "theme": "morning",
+        "orderPosition": 0,
     },
     {
         "id": "1",
-        "order": 1,
         "name": "Before dinner",
-        "theme": "dayIPart"
+        "theme": "dayIPart",
+        "orderPosition": 1,
     },
     {
         "id": "2",
-        "order": 2,
         "name": "After dinner",
-        "theme": "dayIIPart"
+        "theme": "dayIIPart",
+        "orderPosition": 2,
     },
     {
         "id": "3",
-        "order": 3,
         "name": "Evening",
-        "theme": "evening"
+        "theme": "evening",
+        "orderPosition": 3,
     },
     {
         "id": "4",
-        "order": 4,
         "name": "Night",
-        "theme": "night"
+        "theme": "night",
+        "orderPosition": 4,
     },
 ]

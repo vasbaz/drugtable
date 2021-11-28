@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct DrugsListPageView: View {
+    let viewModel = DrugsListPageViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).navigationBarTitle("My drugs")
+        VStack {
+            List {
+                ForEach (viewModel.drugs) {
+                    drug in DrugRowListPageView(drug: drug)
+                }
+            }
+            HStack{
+                Spacer()
+                Button(action: {}) {
+                    HStack {
+                        Text("Add drug")
+                        Image(systemName: "plus")
+                    }
+                    .padding(12.0)
+                }
+            }
+        }
+        .navigationBarTitle("My drugs")
     }
 }
 

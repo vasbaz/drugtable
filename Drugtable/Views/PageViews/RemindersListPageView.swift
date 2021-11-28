@@ -14,7 +14,7 @@ struct RemindersListPageView: View {
         VStack {
             List {
                 ForEach (viewModel.reminderViewModels) {
-                    reminderViewModel in ListPageReminderRowView(viewModel: reminderViewModel)
+                    reminderViewModel in ReminderRowListPageView(viewModel: reminderViewModel)
                 }
             }
             HStack{

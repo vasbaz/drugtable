@@ -33,7 +33,7 @@ struct MainPageRemindersGroupView: View {
             Text(viewModel.interval.name)
                 .font(.title)
             ForEach (viewModel.reminderViewModels) {
-                reminderViewModel in MainPageReminderRowView(viewModel: reminderViewModel)
+                reminderViewModel in ReminderRowMainPageView(viewModel: reminderViewModel)
             }
         }.padding(12.0).background(resolveBackground(theme: viewModel.interval.theme)).cornerRadius(12)
     }

@@ -12,4 +12,5 @@ struct Reminder: Hashable, Codable, Identifiable {
     let drugId: DrugId
     let dosage: Dosage
     let intervalId: IntervalId
+    let inListPosition: Int
 }

@@ -1,14 +1,17 @@
 [
     {
         "id": "1",
-        "name": "Galoperidol"
+        "name": "Galoperidol",
+        "inListPosition": 0,
     },
     {
         "id": "2",
-        "name": "Nurofen"
+        "name": "Nurofen",
+        "inListPosition": 1,
     },
     {
         "id": "3",
-        "name": "Tizin"
+        "name": "Tizin",
+        "inListPosition": 2,
     },
 ]

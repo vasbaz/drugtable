@@ -5,7 +5,8 @@
         "dosage": {
             "amount": "3 pills"
         },
-        "intervalId": "0"
+        "intervalId": "0",
+        "inListPosition": 0,
     },
     {
         "id": "2",
@@ -13,7 +14,8 @@
         "dosage": {
             "amount": "2 pills"
         },
-        "intervalId": "0"
+        "intervalId": "0",
+        "inListPosition": 1,
     },
     {
         "id": "3",
@@ -21,7 +23,8 @@
         "dosage": {
             "amount": "1 injection"
         },
-        "intervalId": "1"
+        "intervalId": "1",
+        "inListPosition": 2,
     },
     {
         "id": "4",
@@ -29,7 +32,8 @@
         "dosage": {
             "amount": "3 pills"
         },
-        "intervalId": "2"
+        "intervalId": "2",
+        "inListPosition": 3,
     },
     {
         "id": "5",
@@ -37,7 +41,8 @@
         "dosage": {
             "amount": "2 pills"
         },
-        "intervalId": "2"
+        "intervalId": "2",
+        "inListPosition": 4,
     },
     {
         "id": "6",
@@ -45,7 +50,8 @@
         "dosage": {
             "amount": "1 injection"
         },
-        "intervalId": "2"
+        "intervalId": "2",
+        "inListPosition": 5,
     },
     {
         "id": "7",
@@ -53,7 +59,8 @@
         "dosage": {
             "amount": "2 pills"
         },
-        "intervalId": "3"
+        "intervalId": "3",
+        "inListPosition": 6,
     },
     {
         "id": "8",
@@ -61,7 +68,8 @@
         "dosage": {
             "amount": "1 injection"
         },
-        "intervalId": "4"
+        "intervalId": "4",
+        "inListPosition": 7,
     },
     {
         "id": "9",
@@ -69,6 +77,7 @@
         "dosage": {
             "amount": "3 pills"
         },
-        "intervalId": "5"
+        "intervalId": "5",
+        "inListPosition": 8,
     },
 ]

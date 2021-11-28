@@ -14,11 +14,7 @@ struct IntervalsListPageView: View {
         VStack {
             List {
                 ForEach (viewModel.intervals) {
-                    interval in HStack{
-                        Text(interval.name)
-                        Spacer()
-                        Text(String(interval.order)).font(.subheadline)
-                    }
+                    interval in IntervalRowListPageView(interval: interval)
                 }
             }
             HStack{

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListPageReminderRowView: View {
+struct ReminderRowListPageView: View {
     let viewModel: ReminderViewModel
     
     var body: some View {
@@ -29,10 +29,10 @@ struct ListPageReminderRowView: View {
     }
 }
 
-struct ListPageReminderRowView_Previews: PreviewProvider {
+struct ReminderRowListPageView_Previews: PreviewProvider {
     static let reminderViewModelMock = ReminderViewModelMockProvider().getMock()
     
     static var previews: some View {
-        ListPageReminderRowView(viewModel: reminderViewModelMock).previewLayout(.sizeThatFits)
+        ReminderRowListPageView(viewModel: reminderViewModelMock).previewLayout(.sizeThatFits)
     }
 }

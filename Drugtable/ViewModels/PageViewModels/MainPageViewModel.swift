@@ -5,7 +5,7 @@
 //  Created by Danila Vasilchenko-Bazarov on 14.11.2021.
 //
 
-class MainPageViewModel {
+final class MainPageViewModel {
     let remindersRepository: RemindersRepository = MockRemindersRepository()
     let intervalsRepository: IntervalsRepository = MockIntervalsRepository()
     let drugsRepository: DrugsRepository = MockDrugsRepository()

@@ -13,7 +13,7 @@ enum IntervalTheme: String, Codable {
 
 struct Interval: Hashable, Codable, Identifiable {
     let id: IntervalId
-    let order: Int
     let name: String
     let theme: IntervalTheme
+    let orderPosition: Int
 }
