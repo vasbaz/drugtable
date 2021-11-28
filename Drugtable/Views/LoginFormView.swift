@@ -27,6 +27,6 @@ struct LoginFormView: View {
 
 struct LoginFormView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginFormView()
+        LoginFormView().previewLayout(.sizeThatFits)
     }
 }

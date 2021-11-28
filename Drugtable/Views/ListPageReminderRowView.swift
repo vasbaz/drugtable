@@ -28,3 +28,11 @@ struct ListPageReminderRowView: View {
         .padding(.vertical, 4.0)
     }
 }
+
+struct ListPageReminderRowView_Previews: PreviewProvider {
+    static let reminderViewModelMock = ReminderViewModelMockProvider().getMock()
+    
+    static var previews: some View {
+        ListPageReminderRowView(viewModel: reminderViewModelMock).previewLayout(.sizeThatFits)
+    }
+}

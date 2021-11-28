@@ -39,10 +39,10 @@ struct MainPageRemindersGroupView: View {
     }
 }
 
-//struct RemindersGroupView_Previews: PreviewProvider {
-//    static let remindersGroupViewMock = RemindersGroupViewMockProvider().getMock()
-//    
-//    static var previews: some View {
-//        MainPageRemindersGroupView(viewModel: remindersGroupViewMock)
-//    }
-//}
+struct RemindersGroupView_Previews: PreviewProvider {
+    static let remindersGroupViewMock = RemindersGroupViewMockProvider().getMock()
+    
+    static var previews: some View {
+        MainPageRemindersGroupView(viewModel: remindersGroupViewMock).previewLayout(.sizeThatFits)
+    }
+}

@@ -55,6 +55,8 @@
 		EFCA096E27401FA80005DB6C /* SettingsPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096D27401FA80005DB6C /* SettingsPageViewModel.swift */; };
 		EFCA097027402F840005DB6C /* SettingsOptionMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */; };
 		EFCD56632752983D00F20E8C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFCD56652752983D00F20E8C /* Localizable.strings */; };
+		EFCD566827538FC500F20E8C /* RemindersGroupViewMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD566727538FC500F20E8C /* RemindersGroupViewMockProvider.swift */; };
+		EFCD566A275395C100F20E8C /* ReminderViewModelMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD5669275395C100F20E8C /* ReminderViewModelMockProvider.swift */; };
 		EFCFE10E274EDA9A000F3F7B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCFE10D274EDA9A000F3F7B /* Colors.xcassets */; };
 		EFCFE1102750135B000F3F7B /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFE10F2750135B000F3F7B /* Gradient.swift */; };
 		EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD585EE270902A700581BD7 /* DrugtableApp.swift */; };
@@ -110,6 +112,8 @@
 		EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionMockProvider.swift; sourceTree = "<group>"; };
 		EFCD56642752983D00F20E8C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EFCD56662752984D00F20E8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EFCD566727538FC500F20E8C /* RemindersGroupViewMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersGroupViewMockProvider.swift; sourceTree = "<group>"; };
+		EFCD5669275395C100F20E8C /* ReminderViewModelMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewModelMockProvider.swift; sourceTree = "<group>"; };
 		EFCFE10D274EDA9A000F3F7B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EFCFE10F2750135B000F3F7B /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		EFD585EE270902A700581BD7 /* DrugtableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugtableApp.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				EFAB1C2E2741921200BF7897 /* IntervalsArrayMockProvider.swift */,
 				EF501DB5270E0A060083FDF9 /* MockProvider.swift */,
 				EF501DBB270E1C0D0083FDF9 /* RemindersArrayMockProvider.swift */,
+				EFCD566727538FC500F20E8C /* RemindersGroupViewMockProvider.swift */,
+				EFCD5669275395C100F20E8C /* ReminderViewModelMockProvider.swift */,
 				EFCA096F27402F840005DB6C /* SettingsOptionMockProvider.swift */,
 				EF501DB8270E14960083FDF9 /* JSONs */,
 			);
@@ -394,6 +400,7 @@
 				EFCA096C27401E640005DB6C /* SettingsOptionsGroupViewModel.swift in Sources */,
 				EFAB1C3C27441E9E00BF7897 /* IntervalsListPageViewModel.swift in Sources */,
 				EFF557122718900E00ADBD5A /* MainPageView.swift in Sources */,
+				EFCD566827538FC500F20E8C /* RemindersGroupViewMockProvider.swift in Sources */,
 				EFAB1C2F2741921200BF7897 /* IntervalsArrayMockProvider.swift in Sources */,
 				EF631D8A270B7C3B00CEED62 /* RemindersRepository.swift in Sources */,
 				EF501DAA270CE46B0083FDF9 /* Reminder.swift in Sources */,
@@ -401,6 +408,7 @@
 				EFCA096A27401B1C0005DB6C /* SettingsOptionViewModel.swift in Sources */,
 				EFAB1C322741940900BF7897 /* MainPageViewModel.swift in Sources */,
 				EFD585EF270902A700581BD7 /* DrugtableApp.swift in Sources */,
+				EFCD566A275395C100F20E8C /* ReminderViewModelMockProvider.swift in Sources */,
 				EF3C4D7E27231D8F00802F31 /* RegisterPageView.swift in Sources */,
 				EF501DB6270E0A060083FDF9 /* MockProvider.swift in Sources */,
 				EF3C4D8027231DC800802F31 /* LoginPageView.swift in Sources */,

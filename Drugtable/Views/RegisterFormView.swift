@@ -30,6 +30,6 @@ struct RegisterFormView: View {
 
 struct RegisterFormView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterFormView()
+        RegisterFormView().previewLayout(.sizeThatFits)
     }
 }

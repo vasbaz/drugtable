@@ -21,10 +21,10 @@ struct MainPageReminderRowView: View {
     }
 }
 
-//struct ReminderRowView_Previews: PreviewProvider {
-//    static let reminderMock = ReminderMockProvider().getMock()
-//
-//    static var previews: some View {
-//        return ReminderRowView(viewModel: reminderMock)
-//    }
-//}
+struct ReminderRowView_Previews: PreviewProvider {
+    static let reminderViewModelMock = ReminderViewModelMockProvider().getMock()
+
+    static var previews: some View {
+        return MainPageReminderRowView(viewModel: reminderViewModelMock).previewLayout(.sizeThatFits)
+    }
+}

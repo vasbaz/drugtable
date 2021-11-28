@@ -2,12 +2,15 @@
 //  RemindersGroupViewMockProvider.swift
 //  Drugtable
 //
-//  Created by Danila Vasilchenko-Bazarov on 14.10.2021.
+//  Created by Danila Vasilchenko-Bazarov on 28.11.2021.
 //
 
-//class RemindersGroupViewMockProvider: MockProvider {
-//    let reminders = RemindersArrayMockProvider().getMock()
-//    let interval = IntervalMockProvider().getMock()
-//
-//    func getMock() -> RemindersGroupViewModel { RemindersGroupViewModel(interval: interval, reminders: reminders) }
-//}
+import Foundation
+
+final class RemindersGroupViewMockProvider: MockProvider {
+    let mainPageViewModel = MainPageViewModel();
+    
+    func getMock() -> RemindersGroupViewModel {
+        mainPageViewModel.remindersGroups[0]
+    }
+}

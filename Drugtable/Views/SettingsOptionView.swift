@@ -44,6 +44,6 @@ struct SettingsOptionView_Previews: PreviewProvider {
     static let option = SettingsOptionMockProvider().getMock()
     
     static var previews: some View {
-        SettingsOptionView(option: option)
+        SettingsOptionView(option: option).previewLayout(.sizeThatFits)
     }
 }
