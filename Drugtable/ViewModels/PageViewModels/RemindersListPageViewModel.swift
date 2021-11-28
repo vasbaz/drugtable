@@ -9,9 +9,9 @@ import Foundation
 import Combine
 
 final class RemindersListPageViewModel: ObservableObject {
-    let remindersRepository: RemindersRepository = MockRemindersRepository()
-    let intervalsRepository: IntervalsRepository = MockIntervalsRepository()
-    let drugsRepository: DrugsRepository = MockDrugsRepository()
+    let remindersRepository: RemindersRepository = MockRemindersRepository.shared
+    let intervalsRepository: IntervalsRepository = MockIntervalsRepository.shared
+    let drugsRepository: DrugsRepository = MockDrugsRepository.shared
     
     @Published var reminderViewModels: [ReminderViewModel] = []
     
@@ -44,5 +44,10 @@ final class RemindersListPageViewModel: ObservableObject {
         }
         
         return rawReminderViewModels.compactMap { $0 }
+    }
+    
+    func onDeleteHandler(atOffsets indexSet: IndexSet) {
+        let remindersToDeleteIds = indexSet.lazy.map { self.reminderViewModels[$0].reminder.id }
+        remindersToDeleteIds.forEach {remindersRepository.deleteReminderById($0) }
     }
 }

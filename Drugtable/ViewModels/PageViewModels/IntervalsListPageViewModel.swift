@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 final class IntervalsListPageViewModel: ObservableObject {
-    @Published var intervalsRepository: IntervalsRepository = MockIntervalsRepository()
+    @Published var intervalsRepository: IntervalsRepository = MockIntervalsRepository.shared
     @Published var intervals: [Interval] = []
     
     private var cancellables = Set<AnyCancellable>()

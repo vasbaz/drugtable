@@ -11,7 +11,9 @@ class BaseIntervalsRepository {
     @Published var intervals: [Interval] = []
 }
 
-protocol IntervalsRepository: BaseIntervalsRepository, Singleton {}
+protocol IntervalsRepository: BaseIntervalsRepository, Singleton {
+    func deleteIntervalById(_ id: ReminderId)
+}
 
 final class MockIntervalsRepository: BaseIntervalsRepository, IntervalsRepository {
     static let shared = MockIntervalsRepository()
@@ -20,5 +22,12 @@ final class MockIntervalsRepository: BaseIntervalsRepository, IntervalsRepositor
     override init() {
         super.init()
         self.intervals = provider.getMock()
+    }
+    
+    func deleteIntervalById(_ id: IntervalId) {
+        if let intervalToDeleteIndex = intervals.firstIndex(where: { $0.id == id }) {
+            intervals.remove(at: intervalToDeleteIndex)
+        }
+        // ToDo: delete reminders
     }
 }

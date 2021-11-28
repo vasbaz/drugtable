@@ -18,6 +18,7 @@ struct RemindersListPageView: View {
                 ForEach (viewModel.reminderViewModels) {
                     reminderViewModel in ReminderRowListPageView(viewModel: reminderViewModel)
                 }
+                .onDelete(perform: viewModel.onDeleteHandler)
             }
             HStack{
                 Spacer()

@@ -9,9 +9,9 @@ import Foundation
 import Combine
 
 final class MainPageViewModel: ObservableObject {
-    let remindersRepository: RemindersRepository = MockRemindersRepository()
-    let intervalsRepository: IntervalsRepository = MockIntervalsRepository()
-    let drugsRepository: DrugsRepository = MockDrugsRepository()
+    let remindersRepository: RemindersRepository = MockRemindersRepository.shared
+    let intervalsRepository: IntervalsRepository = MockIntervalsRepository.shared
+    let drugsRepository: DrugsRepository = MockDrugsRepository.shared
     
     @Published var remindersGroups: [RemindersGroupViewModel] = []
     
