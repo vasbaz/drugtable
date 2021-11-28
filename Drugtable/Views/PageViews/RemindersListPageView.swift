@@ -10,6 +10,8 @@ import SwiftUI
 struct RemindersListPageView: View {
     let viewModel = RemindersListPageViewModel();
     
+    @State private var isShowingEditReminderSheet = false
+    
     var body: some View {
         VStack {
             List {
@@ -19,7 +21,9 @@ struct RemindersListPageView: View {
             }
             HStack{
                 Spacer()
-                Button(action: {}) {
+                Button(action: {
+                    isShowingEditReminderSheet.toggle()
+                }) {
                     HStack {
                         Text("Add reminder")
                         Image(systemName: "plus")
@@ -27,7 +31,11 @@ struct RemindersListPageView: View {
                     .padding(12.0)
                 }
             }
-        }.navigationBarTitle("Edit reminders")
+        }
+        .sheet(isPresented: $isShowingEditReminderSheet) {
+            EditReminderView()
+        }
+        .navigationBarTitle("Edit reminders")
     }
 }
 

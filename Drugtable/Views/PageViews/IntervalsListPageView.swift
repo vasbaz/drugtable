@@ -10,6 +10,8 @@ import SwiftUI
 struct IntervalsListPageView: View {
     let viewModel = IntervalsListPageViewModel();
     
+    @State private var isShowingEditIntervalSheet = false
+    
     var body: some View {
         VStack {
             List {
@@ -19,7 +21,9 @@ struct IntervalsListPageView: View {
             }
             HStack{
                 Spacer()
-                Button(action: {}) {
+                Button(action: {
+                    isShowingEditIntervalSheet.toggle()
+                }) {
                     HStack {
                         Text("New interval")
                         Image(systemName: "plus")
@@ -27,7 +31,11 @@ struct IntervalsListPageView: View {
                     .padding(12.0)
                 }
             }
-        }.navigationBarTitle("Edit intervals")
+        }
+        .sheet(isPresented: $isShowingEditIntervalSheet) {
+            EditIntervalView()
+        }
+        .navigationBarTitle("Edit intervals")
     }
 }
 

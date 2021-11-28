@@ -10,6 +10,8 @@ import SwiftUI
 struct DrugsListPageView: View {
     let viewModel = DrugsListPageViewModel()
     
+    @State private var isShowingEditDrugSheet = false
+    
     var body: some View {
         VStack {
             List {
@@ -19,7 +21,9 @@ struct DrugsListPageView: View {
             }
             HStack{
                 Spacer()
-                Button(action: {}) {
+                Button(action: {
+                    isShowingEditDrugSheet.toggle()
+                }) {
                     HStack {
                         Text("Add drug")
                         Image(systemName: "plus")
@@ -27,6 +31,9 @@ struct DrugsListPageView: View {
                     .padding(12.0)
                 }
             }
+        }
+        .sheet(isPresented: $isShowingEditDrugSheet) {
+            EditDrugView()
         }
         .navigationBarTitle("My drugs")
     }
