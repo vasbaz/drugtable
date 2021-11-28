@@ -5,20 +5,20 @@
 //  Created by Danila Vasilchenko-Bazarov on 14.11.2021.
 //
 
-protocol IntervalsRepository {
-    func getIntervals() -> [Interval]
+import Combine
+
+class BaseIntervalsRepository {
+    @Published var intervals: [Interval] = []
 }
 
-final class MockIntervalsRepository: IntervalsRepository, Singleton {
+protocol IntervalsRepository: BaseIntervalsRepository, Singleton {}
+
+final class MockIntervalsRepository: BaseIntervalsRepository, IntervalsRepository {
     static let shared = MockIntervalsRepository()
     let provider = IntervalsArrayMockProvider()
-    var intervals: [Interval]
     
-    init() {
+    override init() {
+        super.init()
         self.intervals = provider.getMock()
-    }
-    
-    func getIntervals() -> [Interval] {
-        self.intervals
     }
 }

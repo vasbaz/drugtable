@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainPageView: View {
-    let viewModel: MainPageViewModel = MainPageViewModel()
+    @ObservedObject private var viewModel: MainPageViewModel = MainPageViewModel()
     
     var body: some View {
         VStack {

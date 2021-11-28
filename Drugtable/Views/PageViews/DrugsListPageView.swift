@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DrugsListPageView: View {
-    let viewModel = DrugsListPageViewModel()
+    @ObservedObject private var viewModel = DrugsListPageViewModel()
     
     @State private var isShowingEditDrugSheet = false
     

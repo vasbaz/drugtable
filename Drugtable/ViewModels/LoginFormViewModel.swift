@@ -8,11 +8,6 @@
 import Foundation
 
 final class LoginFormViewModel: ObservableObject {
-    @Published var login: String
-    @Published var password: String
-    
-    init(login: String = "", password: String = "") {
-        self.login = login
-        self.password = password
-    }
+    @Published var login = ""
+    @Published var password = ""
 }

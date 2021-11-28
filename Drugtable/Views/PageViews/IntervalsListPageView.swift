@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IntervalsListPageView: View {
-    let viewModel = IntervalsListPageViewModel();
+    @ObservedObject private var viewModel = IntervalsListPageViewModel();
     
     @State private var isShowingEditIntervalSheet = false
     

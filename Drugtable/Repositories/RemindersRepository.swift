@@ -5,20 +5,20 @@
 //  Created by Danila Vasilchenko-Bazarov on 04.10.2021.
 //
 
-protocol RemindersRepository {
-    func getReminders() -> [Reminder]
+import Combine
+
+class BaseRemindersRepository {
+    @Published var reminders: [Reminder] = []
 }
 
-final class MockRemindersRepository: RemindersRepository, Singleton {
+protocol RemindersRepository: BaseRemindersRepository, Singleton {}
+
+final class MockRemindersRepository: BaseRemindersRepository, RemindersRepository {
     static let shared = MockRemindersRepository()
     let provider = RemindersArrayMockProvider()
-    var reminders: [Reminder]
     
-    init() {
+    override init() {
+        super.init()
         self.reminders = provider.getMock()
-    }
-    
-    func getReminders() -> [Reminder] {
-        self.reminders
     }
 }

@@ -5,23 +5,34 @@
 //  Created by Danila Vasilchenko-Bazarov on 14.11.2021.
 //
 
-final class MainPageViewModel {
+import Foundation
+import Combine
+
+final class MainPageViewModel: ObservableObject {
     let remindersRepository: RemindersRepository = MockRemindersRepository()
     let intervalsRepository: IntervalsRepository = MockIntervalsRepository()
     let drugsRepository: DrugsRepository = MockDrugsRepository()
     
-    var remindersGroups: [RemindersGroupViewModel] = []
+    @Published var remindersGroups: [RemindersGroupViewModel] = []
+    
+    private var cancellables: Set<AnyCancellable> = []
     
     init() {
-        fillRemindersGroups()
+        makeRemindersGroupsPublisher
+            .receive(on: RunLoop.main)
+            .assign(to: \.remindersGroups, on: self)
+            .store(in: &cancellables)
     }
     
-    func fillRemindersGroups() {
-        let intervals = intervalsRepository.getIntervals()
-        let reminders = remindersRepository.getReminders()
-        let drugs = drugsRepository.getDrugs()
-        
+    private var makeRemindersGroupsPublisher: AnyPublisher<[RemindersGroupViewModel], Never> {
+        Publishers.CombineLatest3(remindersRepository.$reminders, intervalsRepository.$intervals, drugsRepository.$drugs)
+            .map(makeRemindersGroups)
+            .eraseToAnyPublisher()
+    }
+    
+    func makeRemindersGroups(reminders: [Reminder], intervals: [Interval], drugs: [Drug]) -> [RemindersGroupViewModel] {
         remindersGroups = intervals.map { RemindersGroupViewModel(interval: $0) }
+        
         reminders.forEach { reminder in
             guard let reminderGroup = remindersGroups.first(where: { $0.interval.id == reminder.intervalId}) else {
                 return
@@ -35,6 +46,7 @@ final class MainPageViewModel {
             
             reminderGroup.reminderViewModels.append(reminderViewModel)
         }
-        remindersGroups = remindersGroups.filter { !$0.reminderViewModels.isEmpty }
+        
+        return remindersGroups.filter { !$0.reminderViewModels.isEmpty }
     }
 }

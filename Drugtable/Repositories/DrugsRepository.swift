@@ -5,20 +5,20 @@
 //  Created by Danila Vasilchenko-Bazarov on 16.11.2021.
 //
 
-protocol DrugsRepository {
-    func getDrugs() -> [Drug]
+import Combine
+
+class BaseDrugsRepository {
+    @Published var drugs: [Drug] = []
 }
 
-final class MockDrugsRepository: DrugsRepository, Singleton {
+protocol DrugsRepository: BaseDrugsRepository, Singleton {}
+
+final class MockDrugsRepository: BaseDrugsRepository, DrugsRepository {
     static let shared = MockDrugsRepository()
     let provider = DrugsArrayMockProvider()
-    var drugs: [Drug]
     
-    init() {
+    override init() {
+        super.init()
         self.drugs = provider.getMock()
-    }
-    
-    func getDrugs() -> [Drug] {
-        self.drugs
     }
 }

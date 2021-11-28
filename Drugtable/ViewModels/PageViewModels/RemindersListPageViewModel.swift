@@ -5,34 +5,32 @@
 //  Created by Danila Vasilchenko-Bazarov on 16.11.2021.
 //
 
-final class RemindersListPageViewModel {
+import Foundation
+import Combine
+
+final class RemindersListPageViewModel: ObservableObject {
     let remindersRepository: RemindersRepository = MockRemindersRepository()
     let intervalsRepository: IntervalsRepository = MockIntervalsRepository()
     let drugsRepository: DrugsRepository = MockDrugsRepository()
     
-    var reminders: [Reminder] = []
-    var intervals: [Interval] = []
-    var drugs: [Drug] = []
+    @Published var reminderViewModels: [ReminderViewModel] = []
     
-    var reminderViewModels: [ReminderViewModel] = []
+    private var cancellables: Set<AnyCancellable> = []
     
     init() {
-        reminders = remindersRepository.getReminders()
-        drugs = drugsRepository.getDrugs()
-        intervals = intervalsRepository.getIntervals()
-        
-        fillReminderViewModels()
+        reminderViewModelsPublisher
+            .receive(on: RunLoop.main)
+            .assign(to: \.reminderViewModels, on: self)
+            .store(in: &cancellables)
     }
     
-    func refresh() {
-        reminders = remindersRepository.getReminders()
-        drugs = drugsRepository.getDrugs()
-        intervals = intervalsRepository.getIntervals()
-        
-        fillReminderViewModels()
+    private var reminderViewModelsPublisher: AnyPublisher<[ReminderViewModel], Never> {
+        Publishers.CombineLatest3(remindersRepository.$reminders, intervalsRepository.$intervals, drugsRepository.$drugs)
+            .map(makeReminderViewModels)
+            .eraseToAnyPublisher()
     }
     
-    func fillReminderViewModels() {
+    func makeReminderViewModels(reminders: [Reminder], intervals: [Interval], drugs: [Drug]) -> [ReminderViewModel]  {
         let rawReminderViewModels: [ReminderViewModel?] = reminders.map() { reminder in
             guard let interval = intervals.first(where: { $0.id == reminder.intervalId }) else {
                 return nil
@@ -45,6 +43,6 @@ final class RemindersListPageViewModel {
             return ReminderViewModel(reminder: reminder, drug: drug, interval: interval)
         }
         
-        reminderViewModels = rawReminderViewModels.compactMap { $0 }
+        return rawReminderViewModels.compactMap { $0 }
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RemindersListPageView: View {
-    let viewModel = RemindersListPageViewModel();
+    @ObservedObject private var viewModel = RemindersListPageViewModel();
     
     @State private var isShowingEditReminderSheet = false
     
