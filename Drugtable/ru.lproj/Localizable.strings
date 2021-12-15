@@ -30,3 +30,6 @@
 "Error" = "Ошибка";
 "Registration failed" = "Не удалось зарегистрироваться";
 "Ok" = "Ок";
+"Login failed" = "Не удалось войти";
+"No email" = "Отсутствует email";
+"Log out" = "Выйти";

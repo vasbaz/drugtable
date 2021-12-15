@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsPageView: View {
-    let viewModel: SettingsPageViewModel
+    @ObservedObject var viewModel: SettingsPageViewModel
     
     var body: some View {
         List {

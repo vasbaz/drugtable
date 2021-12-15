@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import Resolver
 
 struct SettingsOptionView: View {
+    @Injected var authRepository: AuthRepository
+    
     let option: SettingsOptionViewModel
-
+    
     @ViewBuilder func resolveDestination(optionType: OptionType) -> some View {
         switch optionType {
         case .login:
@@ -28,9 +31,23 @@ struct SettingsOptionView: View {
     }
     
     var body: some View {
-        NavigationLink(destination: resolveDestination(optionType: option.optionType)) {
+        if (option.optionType == .profile) {
             HStack {
-                Text(LocalizedStringKey(option.title))
+                Text(authRepository.user?.email ?? "No email")
+            }
+        }
+        else if (option.optionType == .logout) {
+            Button(action: { authRepository.logOut() }) {
+                HStack {
+                    Text(LocalizedStringKey(option.title))
+                }
+            }
+        }
+        else {
+            NavigationLink(destination: resolveDestination(optionType: option.optionType)) {
+                HStack {
+                    Text(LocalizedStringKey(option.title))
+                }
             }
         }
     }

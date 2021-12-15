@@ -8,7 +8,7 @@
 import Foundation
 
 enum OptionType {
-    case login, register, drugsList, remindersList, intervalsList, aboutApp
+    case login, register, drugsList, remindersList, intervalsList, aboutApp, logout, profile
 }
 
 struct SettingsOptionViewModel: Identifiable {
@@ -16,4 +16,3 @@ struct SettingsOptionViewModel: Identifiable {
     let title: String
     let optionType: OptionType
 }
-

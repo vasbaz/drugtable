@@ -14,7 +14,7 @@ final class RegisterFormViewModel: ObservableObject {
     static let debounceFor = RunLoop.SchedulerTimeType.Stride(0.375)
     static let minPasswordLenght = 8
     
-    @Injected var authRepository: AuthRepository;
+    @Injected var authRepository: AuthRepository
     
     // Inputs
     @Published var email = ""
@@ -24,7 +24,7 @@ final class RegisterFormViewModel: ObservableObject {
     // Outputs
     @Published var emailMessage: LocalizedStringKey = ""
     @Published var passwordMessage: LocalizedStringKey = ""
-    @Published var isFormValid = false
+    @Published var isFormValid = true
     @Published var presentErrorAlert = false
     
     private var cancellables: Set<AnyCancellable> = []
@@ -37,6 +37,7 @@ final class RegisterFormViewModel: ObservableObject {
             .eraseToAnyPublisher()
     }
     
+    // ToDo: $0.count == 0 ???
     private var passwordLenghtPublisher: AnyPublisher<Bool, Never> {
         $password
             .debounce(for: RegisterFormViewModel.debounceFor, scheduler: RunLoop.main)
@@ -45,10 +46,11 @@ final class RegisterFormViewModel: ObservableObject {
             .eraseToAnyPublisher()
     }
     
+    // ToDo: $0 == "" || $1 == "" ???
     private var arePasswordsEqualPublisher: AnyPublisher<Bool, Never> {
         Publishers.CombineLatest($password, $passwordRepeat)
             .debounce(for: RegisterFormViewModel.debounceFor, scheduler: RunLoop.main)
-            .map { $0 == $1 }
+            .map { $0 == $1 || $0 == "" || $1 == "" }
             .eraseToAnyPublisher()
     }
     
@@ -99,9 +101,9 @@ final class RegisterFormViewModel: ObservableObject {
             .store(in: &cancellables)
         
         isFormValidPublisher
-              .receive(on: RunLoop.main)
-              .assign(to: \.isFormValid, on: self)
-              .store(in: &cancellables)
+            .receive(on: RunLoop.main)
+            .assign(to: \.isFormValid, on: self)
+            .store(in: &cancellables)
     }
     
     func register(completion: @escaping () -> Void) {

@@ -30,3 +30,6 @@
 "Error" = "Error";
 "Registration failed" = "Registration failed";
 "Ok" = "Ok";
+"Login failed" = "Login failed";
+"No email" = "No email";
+"Log out" = "Log out";

@@ -26,11 +26,21 @@ final class AuthRepository {
     }
     
     
-    func login(_ loginFormViewModel: LoginFormViewModel, completion: @escaping (Bool) -> Void) {
+    func logIn(_ loginFormViewModel: LoginFormViewModel, completion: @escaping (Bool) -> Void) {
         auth.signIn(withEmail: loginFormViewModel.login, password: loginFormViewModel.password, completion: authCompletionResolver(completion: completion))
     }
     
     func register(_ registerFormViewModel: RegisterFormViewModel, completion: @escaping (Bool) -> Void) {
         auth.createUser(withEmail: registerFormViewModel.email, password: registerFormViewModel.password, completion: authCompletionResolver(completion: completion))
+    }
+    
+    func logOut() {
+        do {
+            try auth.signOut()
+            self.user = nil
+        }
+        catch {
+            print("logout error")
+        }
     }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RegisterFormView: View {
+    // ToDo: Research
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var registerFormViewModel: RegisterFormViewModel = RegisterFormViewModel()
     
