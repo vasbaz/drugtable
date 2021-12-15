@@ -47,6 +47,7 @@
 		EFAB1C44274424C900BF7897 /* DrugsArrayMockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB1C43274424C800BF7897 /* DrugsArrayMockProvider.swift */; };
 		EFAB1C46274427DF00BF7897 /* DrugsArrayMock.json in Resources */ = {isa = PBXBuildFile; fileRef = EFAB1C45274427DF00BF7897 /* DrugsArrayMock.json */; };
 		EFAB1C4827442BB300BF7897 /* ReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB1C4727442BB300BF7897 /* ReminderViewModel.swift */; };
+		EFAE21FC276A03E4002EFEA2 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE21FB276A03E4002EFEA2 /* EmailValidator.swift */; };
 		EFCA0964274017400005DB6C /* SettingsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA0963274017400005DB6C /* SettingsPageView.swift */; };
 		EFCA096827401A6A0005DB6C /* SettingsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */; };
 		EFCA096A27401B1C0005DB6C /* SettingsOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */; };
@@ -111,6 +112,7 @@
 		EFAB1C43274424C800BF7897 /* DrugsArrayMockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugsArrayMockProvider.swift; sourceTree = "<group>"; };
 		EFAB1C45274427DF00BF7897 /* DrugsArrayMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DrugsArrayMock.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		EFAB1C4727442BB300BF7897 /* ReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewModel.swift; sourceTree = "<group>"; };
+		EFAE21FB276A03E4002EFEA2 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		EFCA0963274017400005DB6C /* SettingsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPageView.swift; sourceTree = "<group>"; };
 		EFCA096727401A6A0005DB6C /* SettingsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionView.swift; sourceTree = "<group>"; };
 		EFCA096927401B1C0005DB6C /* SettingsOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionViewModel.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				EFCFE10F2750135B000F3F7B /* Gradient.swift */,
+				EFAE21FB276A03E4002EFEA2 /* EmailValidator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				EFCD566C2753A64F00F20E8C /* IntervalRowListPageView.swift in Sources */,
 				EFAB1C3A2744163A00BF7897 /* DrugsListPageView.swift in Sources */,
 				EFE4CFA72761063C00239A78 /* DrugtableApp+Injection.swift in Sources */,
+				EFAE21FC276A03E4002EFEA2 /* EmailValidator.swift in Sources */,
 				EFCA0964274017400005DB6C /* SettingsPageView.swift in Sources */,
 				EFCA097027402F840005DB6C /* SettingsOptionMockProvider.swift in Sources */,
 				EF8ED7B52721F0020028FB1E /* LoginFormView.swift in Sources */,

@@ -8,35 +8,29 @@
 import Firebase
 
 final class AuthRepository {    
-    let auth: Auth
+    let auth: Auth = Auth.auth()
     
-    init() {
-        self.auth = Auth.auth()
-    }
+    @Published var user: User?
     
-    func authCompletion(authDataResult: AuthDataResult?, error: Error?) {
-        if (error == nil) {
-            print(authDataResult!.user.email!)
-        }
-        else {
-            print(error)
-        }
-    }
-    
-    func login(_ loginFormViewModel: LoginFormViewModel) {
-        auth.signIn(withEmail: loginFormViewModel.login, password: loginFormViewModel.password, completion: authCompletion)
-    }
-    
-    func register(_ registerFormViewModel: RegisterFormViewModel) throws {
-        if (registerFormViewModel.password == registerFormViewModel.passwordRepeat) {
-            auth.createUser(withEmail: registerFormViewModel.email, password: registerFormViewModel.password, completion: authCompletion)
-        }
-        else {
-            throw AuthError.passwordsEquality
+    func authCompletionResolver(completion: @escaping (Bool) -> Void) -> (AuthDataResult?, Error?) -> Void {
+        return { (authDataResult: AuthDataResult?, error: Error?) in
+            if (error == nil) {
+                self.user = authDataResult?.user
+                completion(true)
+            }
+            else {
+                print(error)
+                completion(false)
+            }
         }
     }
-}
-
-enum AuthError: Error {
-    case passwordsEquality
+    
+    
+    func login(_ loginFormViewModel: LoginFormViewModel, completion: @escaping (Bool) -> Void) {
+        auth.signIn(withEmail: loginFormViewModel.login, password: loginFormViewModel.password, completion: authCompletionResolver(completion: completion))
+    }
+    
+    func register(_ registerFormViewModel: RegisterFormViewModel, completion: @escaping (Bool) -> Void) {
+        auth.createUser(withEmail: registerFormViewModel.email, password: registerFormViewModel.password, completion: authCompletionResolver(completion: completion))
+    }
 }

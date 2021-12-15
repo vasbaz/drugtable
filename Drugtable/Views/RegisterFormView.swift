@@ -8,22 +8,28 @@
 import SwiftUI
 
 struct RegisterFormView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var registerFormViewModel: RegisterFormViewModel = RegisterFormViewModel()
     
     var body: some View {
         Form {
-            Section {
+            Section(footer: Text(registerFormViewModel.emailMessage).foregroundColor(.red)) {
                 TextField(LocalizedStringKey("Email address"), text: $registerFormViewModel.email)
             }
-            Section {
+            Section(footer: Text(registerFormViewModel.passwordMessage).foregroundColor(.red)) {
                 SecureField(LocalizedStringKey("Password"), text: $registerFormViewModel.password)
                 SecureField(LocalizedStringKey("Password repeat"), text: $registerFormViewModel.passwordRepeat)
             }
             Section {
-                Button(action: { }) {
+                Button(action: { registerFormViewModel.register(completion: {
+                    self.presentationMode.wrappedValue.dismiss()
+                })}) {
                     Text("Register")
                 }
             }
+        }
+        .alert(isPresented: $registerFormViewModel.presentErrorAlert) {
+            Alert(title: Text("Error"), message: Text("Registration failed"), dismissButton: .default(Text("Ok")))
         }
     }
 }

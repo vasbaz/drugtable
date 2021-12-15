@@ -24,3 +24,9 @@
 "Login" = "Login";
 "Password" = "Password";
 "Password repeat" = "Password repeat";
+"Wrong email format" = "Wrong email format";
+"Password must be at least 8 characters long" = "Password must be at least 8 characters long";
+"The repeated password does not match the original" = "The repeated password does not match the original";
+"Error" = "Error";
+"Registration failed" = "Registration failed";
+"Ok" = "Ok";

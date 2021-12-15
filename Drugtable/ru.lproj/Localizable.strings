@@ -24,3 +24,9 @@
 "Login" = "Логин";
 "Password" = "Пароль";
 "Password repeat" = "Повторите пароль";
+"Wrong email format" = "Неправильный формат email";
+"Password must be at least 8 characters long" = "Пароль должен состоять не менее чем из 8 символов";
+"The repeated password does not match the original" = "Повторный пароль не совпадает с исходным";
+"Error" = "Ошибка";
+"Registration failed" = "Не удалось зарегистрироваться";
+"Ok" = "Ок";

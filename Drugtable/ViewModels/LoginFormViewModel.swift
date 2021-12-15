@@ -10,4 +10,6 @@ import Foundation
 final class LoginFormViewModel: ObservableObject {
     @Published var login = ""
     @Published var password = ""
+    
+    
 }
