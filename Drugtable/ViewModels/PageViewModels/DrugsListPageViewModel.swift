@@ -7,9 +7,10 @@
 
 import Foundation
 import Combine
+import Resolver
 
 final class DrugsListPageViewModel: ObservableObject {
-    @Published var drugsRepository: DrugsRepository = MockDrugsRepository.shared
+    @Injected var drugsRepository: DrugsRepository
     @Published var drugs: [Drug] = []
     
     private var cancellables = Set<AnyCancellable>()

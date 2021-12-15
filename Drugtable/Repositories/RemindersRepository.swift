@@ -11,12 +11,11 @@ class BaseRemindersRepository {
     @Published var reminders: [Reminder] = []
 }
 
-protocol RemindersRepository: BaseRemindersRepository, Singleton {
+protocol RemindersRepository: BaseRemindersRepository {
     func deleteReminderById(_ id: ReminderId)
 }
 
 final class MockRemindersRepository: BaseRemindersRepository, RemindersRepository {
-    static let shared = MockRemindersRepository()
     let provider = RemindersArrayMockProvider()
     
     override init() {

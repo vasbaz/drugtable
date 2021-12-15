@@ -7,9 +7,7 @@
 
 import Firebase
 
-final class AuthRepository: Singleton {
-    static let shared = AuthRepository()
-    
+final class AuthRepository {    
     let auth: Auth
     
     init() {

@@ -11,12 +11,11 @@ class BaseDrugsRepository {
     @Published var drugs: [Drug] = []
 }
 
-protocol DrugsRepository: BaseDrugsRepository, Singleton {
+protocol DrugsRepository: BaseDrugsRepository {
     func deleteDrugById(_ id: DrugId)
 }
 
 final class MockDrugsRepository: BaseDrugsRepository, DrugsRepository {
-    static let shared = MockDrugsRepository()
     let provider = DrugsArrayMockProvider()
     
     override init() {

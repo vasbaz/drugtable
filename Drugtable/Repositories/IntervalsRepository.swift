@@ -11,12 +11,11 @@ class BaseIntervalsRepository {
     @Published var intervals: [Interval] = []
 }
 
-protocol IntervalsRepository: BaseIntervalsRepository, Singleton {
+protocol IntervalsRepository: BaseIntervalsRepository {
     func deleteIntervalById(_ id: ReminderId)
 }
 
 final class MockIntervalsRepository: BaseIntervalsRepository, IntervalsRepository {
-    static let shared = MockIntervalsRepository()
     let provider = IntervalsArrayMockProvider()
     
     override init() {

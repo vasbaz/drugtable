@@ -7,11 +7,12 @@
 
 import Foundation
 import Combine
+import Resolver
 
 final class RemindersListPageViewModel: ObservableObject {
-    let remindersRepository: RemindersRepository = MockRemindersRepository.shared
-    let intervalsRepository: IntervalsRepository = MockIntervalsRepository.shared
-    let drugsRepository: DrugsRepository = MockDrugsRepository.shared
+    @Injected var remindersRepository: RemindersRepository
+    @Injected var intervalsRepository: IntervalsRepository
+    @Injected var drugsRepository: DrugsRepository
     
     @Published var reminderViewModels: [ReminderViewModel] = []
     
